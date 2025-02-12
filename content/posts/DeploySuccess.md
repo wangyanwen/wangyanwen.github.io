@@ -1,6 +1,6 @@
 +++
 date = '2025-02-12T12:32:19+01:00'
-draft = true
+draft = false
 title = 'DeploySuccess'
 +++
 

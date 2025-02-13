@@ -1,5 +1,5 @@
 +++
-date =  '2025.02.13 20:18'
+date =  {{.Date}}
 title = 'About'
 +++
 

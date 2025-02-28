@@ -4,3 +4,6 @@
 [submodule "hugo-theme-console"]
 	path = hugo-theme-console
 	url = https://github.com/mrmierzejewski/hugo-theme-console.git
+[submodule "hugo-theme-console-bak"]
+	path = hugo-theme-console-bak
+	url = https://github.com/mrmierzejewski/hugo-theme-console.git

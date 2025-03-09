@@ -2,7 +2,7 @@
 
 <h1>About</h1>
 
-<div class="posts-list">
+<div class="about">
 {{ with .Site.GetPage "/about" }}
     {{ range first 3 (sort .Data.Pages "Date" "desc" (where .Pages ".Params.private" "!=" true))}}
         <div class="about">

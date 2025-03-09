@@ -1,4 +1,0 @@
-baseURL = 'https://tech.juan-cool.com/'
-languageCode = 'en-us'
-title = "卷's papa的技术随想"
-theme = 'hugo-theme-console'

@@ -1,7 +1,6 @@
 {{ define "main" }}
 
 <h1>About</h1>
-
 <div class="posts-list">
 {{ with .Site.GetPage "/about" }}
     {{ range first 3 (sort .Data.Pages "Date" "desc" (where .Pages ".Params.private" "!=" true))}}
@@ -15,8 +14,6 @@
     {{ end }}
 {{ end }}
 </div>
-
-<br/>
 
 <h1>Latest posts</h1>
 

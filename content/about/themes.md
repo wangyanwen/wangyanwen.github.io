@@ -3,11 +3,10 @@ date = "2016-11-05T21:05:33+05:30"
 title = "About hugo-theme-console"
 +++
 
-A minimal and responsive Hugo theme inspired by the system console, crafted for optimal performance with an average page load time of under one second.
-
-Theme is based on a modern and minimal [Terminal CSS](https://terminalcss.xyz/) framework. 
-
-![Console](https://github.com/mrmierzejewski/hugo-theme-console/blob/master/images/preview.png?raw=true)
+<p>
+Console is a minimal, responsive and light theme for Hugo inspired by Linux console.  <a href="https://github.com/mrmierzejewski/hugo-theme-console">(more)</a>
+</p>
+<br/>
 
 Copyright © 2024 [Marcin Mierzejewski](https://mrmierzejewski.com/)
 

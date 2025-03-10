@@ -8,6 +8,7 @@ title = 'decap_cms_setup.md'
 我：利用github pages搭建hugo免费网站，tina cms和decap cms比较，或者有更好的推荐
 
 chatgpt：用户想要在GitHub Pages上使用Hugo搭建免费站点，询问关于Tina CMS和Decap CMS的比较，或者是否有更好的推荐。Tina CMS和Decap CMS是常见的头less CMS选项，都可以配合Hugo使用。Tina CMS注重易用性，界面友好，适合小型项目；Decap CMS则与GitHub Pages更兼容，适合需要更多自定义的项目。我会提供一些更加定制化的CMS推荐，比如Netlify CMS、Contentful等。
+<!--more-->
 
 用户询问关于Tina CMS和Decap CMS的对比，并寻找更好的推荐。我了解到，Tina CMS是一个React基础的无头CMS，主要与Git结合，适用于Jamstack站点，支持Hugo等静态生成器。另一方面，Decap CMS，也曾称为Netlify CMS，是一个Git基础的CMS，主要用于静态站点生成器，具有更强的markdown编辑功能。我会推荐这些CMS，但还可以考虑像Netlify CMS、Contentful等其他选项作为替代。
 

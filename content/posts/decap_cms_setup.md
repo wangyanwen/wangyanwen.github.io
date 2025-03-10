@@ -1,3 +1,8 @@
++++
+date = '2025-03-10T10:13:19+01:00'
+draft = false
+title = 'decap_cms_setup.md'
++++
 对话提问及ghatgpt推理过程记录：
 
 我：利用github pages搭建hugo免费网站，tina cms和decap cms比较，或者有更好的推荐

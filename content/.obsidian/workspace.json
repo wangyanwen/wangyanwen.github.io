@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "c020905447412b7d",
+        "id": "6a705093ac976cbc",
         "type": "tabs",
         "children": [
           {
-            "id": "6c4eb9f750ccef9d",
+            "id": "7bc7d97222b72620",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -161,8 +161,10 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "6c4eb9f750ccef9d",
+  "active": "7bc7d97222b72620",
   "lastOpenFiles": [
+    "posts/decap_cms_setup.md",
+    "posts/md编辑器选择.md",
     "posts/Mac微信双开.md"
   ]
 }

@@ -6,7 +6,9 @@ title = 'md编辑器选择'
 
 我：md编辑器joplin、taio、lucidmarkdown、editorial、obsidian与hugo兼容性最好的是哪个，因为我用joplin的插入时间发现不兼容
 
-chatgpt：从当前社区使用情况和功能兼容性上看，**Obsidian** 通常被认为是和 Hugo 等静态站点生成器“最兼容”或说“用起来最顺畅”的 Markdown 编辑器/知识库工具。以下是一些原因与各工具的对比，供你参考：
+chatgpt：从当前社区使用情况和功能兼容性上看，**Obsidian** 通常被认为是和 Hugo 等静态站点生成器“最兼容”或说“用起来最顺畅”的 Markdown 编辑器/知识库工具。
+<!--more-->
+以下是一些原因与各工具的对比，供你参考：
 
 ---
 

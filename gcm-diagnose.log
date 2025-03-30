@@ -1,0 +1,150 @@
+﻿Diagnose log at 2025-03-29T20:50:36Z
+
+AppPath: /usr/local/bin/git-credential-manager
+InstallDir: /usr/local/share/gcm-core/
+Version: 2.6.1+786ab03440ddc82e807a97c0e540f5247e44cec6
+
+------------
+Diagnostic: Environment
+Skipped: False
+Success: True
+Exception: None
+Log:
+OSType: macOS
+OSVersion: 10.15.7
+Reading environment variables... OK
+ Variables:
+XPC_SERVICE_NAME=0
+TERM=xterm-256color
+TERM_PROGRAM=Apple_Terminal
+_=/usr/local/bin/git-credential-manager
+__CF_USER_TEXT_ENCODING=0x1F5:0x0:0x0
+GIT_TRACE2_PARENT_SID=570cf9a5-7d67-4891-b7b1-e115744783f8
+OLDPWD=/Users/juan/MyBlog/wangyanwen.github.io/.git
+PWD=/Users/juan/MyBlog/wangyanwen.github.io
+SHELL=/bin/zsh
+LaunchInstanceID=D36C090D-A79A-4926-93CB-FB2EDE6309E6
+SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.aTIY63z5lN/Listeners
+SECURITYSESSIONID=186a6
+PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+USER=juan
+TERM_SESSION_ID=ED8E570B-BA90-46DA-B6C9-AE8E11233234
+SHLVL=1
+LOGNAME=juan
+XPC_FLAGS=0x0
+TERM_PROGRAM_VERSION=433
+TMPDIR=/var/folders/76/kj1b70nd6hgfjjg3_vc6jlq40000gn/T/
+HOME=/Users/juan
+LC_CTYPE=UTF-8
+
+
+------------
+Diagnostic: File system
+Skipped: False
+Success: True
+Exception: None
+Log:
+Temporary directory is '/var/folders/76/kj1b70nd6hgfjjg3_vc6jlq40000gn/T/'...
+Checking basic file I/O...
+Writing to temporary file '/var/folders/76/kj1b70nd6hgfjjg3_vc6jlq40000gn/T/7bcb48a4a4183698f35ec326'... OK
+Reading from temporary file '/var/folders/76/kj1b70nd6hgfjjg3_vc6jlq40000gn/T/7bcb48a4a4183698f35ec326'... OK
+Deleting temporary file '/var/folders/76/kj1b70nd6hgfjjg3_vc6jlq40000gn/T/7bcb48a4a4183698f35ec326'... OK
+Testing IFileSystem instance...
+UserHomePath: /Users/juan
+UserDataDirectoryPath: /Users/juan/.gcm
+GetCurrentDirectory(): /Users/juan/MyBlog/wangyanwen.github.io
+
+------------
+Diagnostic: Networking
+Skipped: False
+Success: True
+Exception: None
+Log:
+Checking networking and HTTP stack...
+Creating HTTP client... OK
+IsNetworkAvailable: True
+Sending HEAD request to http://example.com...Sending HEAD request to https://example.com... OK
+ OK
+Acquiring free TCP port... OK
+Testing local HTTP loopback connections...
+Creating new HTTP listener for http://localhost:60370/... OK
+Waiting for loopback connection... OK
+Writing response... OK
+Waiting for response data... OK
+Loopback connection data OK
+
+------------
+Diagnostic: Git
+Skipped: False
+Success: True
+Exception: None
+Log:
+Getting Git version... OK
+Git version is '2.24.3 (Apple Git-128)'
+Locating current repository...Git repository at '/Users/juan/MyBlog/wangyanwen.github.io/.git'
+ OK
+Listing all Git configuration... OK
+Git configuration:
+file:/Library/Developer/CommandLineTools/usr/share/git-core/gitconfig	credential.helper=osxkeychain
+file:/Users/juan/.gitconfig	user.email=wangyanwen.app@gmail.com
+file:/Users/juan/.gitconfig	user.name=wangyanwen
+file:/Users/juan/.gitconfig	credential.helper=
+file:/Users/juan/.gitconfig	credential.helper=/usr/local/share/gcm-core/git-credential-manager
+file:/Users/juan/.gitconfig	credential.https://dev.azure.com.usehttppath=true
+file:/Users/juan/.gitconfig	init.defaultbranch=main
+file:/Users/juan/.gitconfig	filter.lfs.clean=git-lfs clean -- %f
+file:/Users/juan/.gitconfig	filter.lfs.smudge=git-lfs smudge -- %f
+file:/Users/juan/.gitconfig	filter.lfs.process=git-lfs filter-process
+file:/Users/juan/.gitconfig	filter.lfs.required=true
+file:.git/config	core.repositoryformatversion=0
+file:.git/config	core.filemode=true
+file:.git/config	core.bare=false
+file:.git/config	core.logallrefupdates=true
+file:.git/config	core.ignorecase=true
+file:.git/config	core.precomposeunicode=true
+file:.git/config	user.name=wangyanwen
+file:.git/config	user.email=wangyanwen.app@gmail.com
+file:.git/config	credential.helper=manager
+file:.git/config	remote.origin.url=https://github.com/wangyanwen/wangyanwen.github.io.git
+file:.git/config	remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*
+file:.git/config	branch.master.remote=origin
+file:.git/config	branch.master.merge=refs/heads/master
+
+
+------------
+Diagnostic: Credential storage
+Skipped: False
+Success: True
+Exception: None
+Log:
+ICredentialStore instance is of type: CredentialStore
+Writing test credential... OK
+Reading test credential... OK
+Deleting test credential... OK
+
+------------
+Diagnostic: Microsoft authentication (AAD/MSA)
+Skipped: False
+Success: True
+Exception: None
+Log:
+Broker is not enabled.
+Flow type is: Auto
+Gathering MSAL token cache data... OK
+CacheDirectory: /Users/juan/.local/.IdentityService
+CacheFileName: msal.cache
+CacheFilePath: /Users/juan/.local/.IdentityService/msal.cache
+MacKeyChainAccountName: MSALCache
+MacKeyChainServiceName: Microsoft.Developer.IdentityService
+Creating cache helper... OK
+Verifying MSAL token cache persistence... OK
+
+------------
+Diagnostic: GitHub API
+Skipped: False
+Success: True
+Exception: None
+Log:
+Using 'https://github.com/' as API target.
+Querying '/meta' endpoint... OK
+

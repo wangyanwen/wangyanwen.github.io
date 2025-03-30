@@ -1,6 +1,6 @@
 baseurl = "https://tech.juan-cool.com"
 DefaultContentLanguage = "en"
-title = "卷爸的随想"
+title = "卷儿的库"
 # Using theme as git submodule
 theme = "beautifulhugo"
 # Or when using theme as hugo module
@@ -19,7 +19,7 @@ theme = "beautifulhugo"
     # id = "XXX"
 
 [Params]
-  homeTitle = "卷儿的库" # Set a different text for the header on the home page
+  homeTitle = "卷爸随想" # Set a different text for the header on the home page
   subtitle = "Papa's records"
   mainSections = ["post","posts"]
   logo = "img/juanPapa.png" # Expecting square dimensions

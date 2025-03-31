@@ -4,6 +4,10 @@ draft = false
 title = 'md编辑器选择'
 +++
 
+先说结果：**<font color="#0070c0">obsidian</font>**，符合我的需求：<span style="background:#b1ffff">本地化管理（可以直接编辑文件夹的md文件），能直接管理本地文件，实时分栏预览效果，有类似word方便的可视化编辑工具栏开源免费且目前仍在积极维护中。</span>joplin有方便的编辑工具栏，但不支持本地管理，obsidian默认没有可视化工具栏，但可以安装社区插件Editing Toolbar实现。
+
+---
+
 我：md编辑器joplin、taio、lucidmarkdown、editorial、obsidian与hugo兼容性最好的是哪个，因为我用joplin的插入时间发现不兼容
 
 chatgpt：从当前社区使用情况和功能兼容性上看，**Obsidian** 通常被认为是和 Hugo 等静态站点生成器“最兼容”或说“用起来最顺畅”的 Markdown 编辑器/知识库工具。

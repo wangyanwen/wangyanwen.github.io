@@ -1,5 +1,5 @@
 +++
-date = '2025-03-30T23:34:19+01:00'
+date = '2025-03-30T23:34:19+02:00'
 draft = false
 title = '如何删除git submodule add的hugo主题'
 +++

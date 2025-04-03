@@ -7,6 +7,7 @@ title = '自动commit和push的脚本'
 **简化操作，不再纠结全自动，编写完后就手动点击autopush脚本实现提交。**
 
 你可以用 Automator 或 AppleScript 制作一个桌面应用，当你点击它时自动运行 autopush 脚本。这是一种比较优雅且直观的方式。下面介绍两种方案：
+<!--more-->
 
 ---
 

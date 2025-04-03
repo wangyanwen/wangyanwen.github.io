@@ -22,6 +22,7 @@ chatgpt：
 1. 定时任务（cron 或 launchd）
 2. 扩展现有自动更新脚本
 3. 利用 Webhook 或 CI/CD 系统
+我们无法完全保证冲突绝对不会发生，但可以采取措施降低发生冲突的概率。一种常见方法是在执行自动提交前自动将本地修改暂存（stash），然后先拉取远端最新更新（使用 `git pull --rebase`），待拉取完成后再将暂存的修改恢复（stash pop），这样能够让 rebase 过程在工作区干净的情况下进行，从而减少冲突的可能性。下面给出一个优化后的脚本示例：
 <!--more-->
 
 下面提供两个脚本示例和一个 launchd 配置文件示例：
@@ -31,46 +32,65 @@ chatgpt：
 ### 脚本 1：自动提交和推送脚本 (auto_push.sh)
 
 ```bash
+
 #!/bin/bash
-# auto_push.sh
-# 请将 REPO_PATH 替换为你的 Git 仓库路径
+# optimized_auto_push.sh - 自动拉取远端更新、暂存本地修改、提交并推送
+
+# 配置仓库路径和最小提交间隔（秒）
 REPO_PATH="/path/to/your/repo"
-# 设置最小间隔（秒），小于该间隔则跳过提交
 THRESHOLD=60
 
 cd "$REPO_PATH" || { echo "无法进入仓库目录"; exit 1; }
 
-# 如果本地没有未提交更改，则先 pull 远端最新代码
-if [ -z "$(git status --porcelain)" ]; then
-    echo "无未提交修改，自动拉取远端更新..."
-    git pull origin "$(git symbolic-ref --short HEAD)"
+# 检查是否有未提交的修改，如果有则 stash 起来
+if [ -n "$(git status --porcelain)" ]; then
+    echo "检测到本地修改，正在暂存 (stash) 这些修改..."
+    git stash save "Auto stash before pull"
+    STASHED=1
 else
-    echo "检测到本地未提交修改，跳过自动拉取。"
+    STASHED=0
 fi
 
-# 然后执行自动提交和推送逻辑...
+# 拉取远端更新并进行 rebase
+echo "拉取远端最新更新（使用 rebase）..."
+if ! git pull --rebase origin "$(git symbolic-ref --short HEAD)"; then
+    echo "拉取或 rebase 失败，请手动解决冲突。"
+    # 如果之前暂存了，尝试恢复以避免丢失修改
+    if [ "$STASHED" -eq 1 ]; then
+        echo "恢复暂存的修改..."
+        git stash pop
+    fi
+    exit 1
+fi
 
-# 获取上次 commit 的时间（Unix 时间戳）
+# 如果之前暂存了修改，恢复暂存内容
+if [ "$STASHED" -eq 1 ]; then
+    echo "恢复暂存的修改..."
+    if ! git stash pop; then
+        echo "恢复暂存内容时产生冲突，请手动解决。"
+        exit 1
+    fi
+fi
+
+# 检查上次提交时间，避免过于频繁提交
 LAST_COMMIT_TIME=$(git log -1 --format=%ct 2>/dev/null || echo 0)
 CURRENT_TIME=$(date +%s)
 TIME_DIFF=$(( CURRENT_TIME - LAST_COMMIT_TIME ))
-
 if [ "$TIME_DIFF" -lt "$THRESHOLD" ]; then
     echo "上次提交距今仅 ${TIME_DIFF}s，低于阈值 ${THRESHOLD}s，跳过自动提交。"
     exit 0
 fi
 
-# 检查是否有未提交的更改
+# 检查是否有新的更改需要提交
 if [ -z "$(git status --porcelain)" ]; then
     echo "没有检测到更改，跳过提交。"
     exit 0
 fi
 
-# 自定义 commit 信息逻辑：
-# 统计更改的文件数，并生成带有当前时间的提交信息
+# 统计更改的文件数，并生成提交信息
 NUM_CHANGED_FILES=$(git status --porcelain | wc -l | tr -d ' ')
 DEFAULT_MSG="Auto commit at $(date '+%Y-%m-%d %H:%M:%S'): ${NUM_CHANGED_FILES} file(s) changed."
-# 如果环境变量 CUSTOM_COMMIT_MSG 有设置，则优先使用它
+# 支持使用环境变量 CUSTOM_COMMIT_MSG 来自定义提交信息
 if [ -n "$CUSTOM_COMMIT_MSG" ]; then
     COMMIT_MSG="$CUSTOM_COMMIT_MSG"
 else
@@ -79,10 +99,11 @@ fi
 
 echo "提交信息：$COMMIT_MSG"
 
-# 执行 Git 操作：添加、提交、推送
+# 执行添加、提交和推送操作
 git add .
 git commit -m "$COMMIT_MSG"
 git push origin "$(git symbolic-ref --short HEAD)"
+
 ```
 
 > **注意：**
@@ -100,19 +121,45 @@ git push origin "$(git symbolic-ref --short HEAD)"
 
 ### 脚本 2：使用 fswatch 监控并触发自动提交 (watch_fswatch.sh)
 
+下面是一个经过优化的 watch_fswatch 脚本示例，主要改进点包括：
+
+1. **日志记录**：将输出写入日志文件，方便排查问题。
+    
+2. **防抖处理**：在检测到变化后增加一定延迟（如 5 秒），确保文件修改稳定后再触发自动提交。
+    
+3. **错误处理**：在切换目录失败时及时退出，确保脚本不会在错误状态下运行。
+    
+
+优化后的脚本如下（请将 `/path/to/your/repo` 和 `/path/to/auto_push.sh` 替换为你的实际路径）：
+
 ```bash
 #!/bin/bash
-# watch_fswatch.sh
-# 请将 REPO_PATH 替换为你的 Git 仓库路径
-REPO_PATH="/path/to/your/repo"
-cd "$REPO_PATH" || { echo "无法进入仓库目录"; exit 1; }
+# optimized_watch_fswatch.sh
+# 优化后的 fswatch 监控脚本，用于监控当前目录下所有 .md 文件，
+# 当文件修改稳定后自动调用 auto_push.sh 进行自动提交和推送
 
-# 监控整个仓库目录（可根据需要修改匹配模式，此处监控所有文件变化）
-fswatch -o . | while read -r event_count; do
-    echo "检测到变化($event_count)，等待稳定后执行自动更新..."
-    # 调用自动提交脚本
-    /path/to/auto_push.sh
+# 配置 Git 仓库路径
+REPO_PATH="/path/to/your/repo"
+
+# 日志文件路径（可选）
+LOGFILE="/tmp/watch_fswatch.log"
+
+# 切换到仓库目录
+cd "$REPO_PATH" || { echo "无法进入仓库目录 $REPO_PATH"; exit 1; }
+
+echo "[$(date '+%Y-%m-%d %H:%M:%S')] 启动 fswatch 监控..." | tee -a "$LOGFILE"
+
+# 使用 fswatch 监控当前目录下所有扩展名为 .md 的文件
+fswatch -o -i '.*\.md$' . | while read -r event_count; do
+    echo "[$(date '+%Y-%m-%d %H:%M:%S')] 检测到变化($event_count)，等待稳定后执行自动更新..." | tee -a "$LOGFILE"
+    
+    # 防止因连续多次触发导致频繁提交，等待 5 秒后再执行更新操作
+    sleep 5
+    
+    # 调用自动提交脚本，并将输出追加到日志文件
+    /path/to/auto_push.sh >> "$LOGFILE" 2>&1
 done
+
 ```
 
 > **说明：**

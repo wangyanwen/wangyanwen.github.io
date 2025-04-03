@@ -19,7 +19,7 @@ theme = "beautifulhugo"
     # id = "XXX"
 
 [Params]
-  homeTitle = "卷爸随想" # Set a different text for the header on the home page
+  homeTitle = "蛋卷爸的随想" # Set a different text for the header on the home page
   subtitle = "Papa's records"
   mainSections = ["post","posts"]
   logo = "img/juanPapa.png" # Expecting square dimensions

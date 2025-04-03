@@ -4,7 +4,7 @@ draft = false
 title = 'DeploySuccess'
 +++
 
-总算成功部署到github pages了（四级标题）测试
+总算成功部署到github pages了
 
 经过不断的修改，总算成功部署了，所以只靠ai小助手的一次回答还是会有各种小问题，碰到问题需要不断推进提问。
 

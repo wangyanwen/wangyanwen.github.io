@@ -16,6 +16,12 @@ title = '自动commit和push的脚本'
     你可以直接在后台运行该脚本，也可以将其封装成 launchd 服务。
     
 
+继续完善：
+问题“上面方案可以解决本地自动更新的问题，如果远端更新后，能不能自动pull回本地”
+chatgpt：
+1. 定时任务（cron 或 launchd）
+2. 扩展现有自动更新脚本
+3. 利用 Webhook 或 CI/CD 系统
 <!--more-->
 
 下面提供两个脚本示例和一个 launchd 配置文件示例：
@@ -33,6 +39,16 @@ REPO_PATH="/path/to/your/repo"
 THRESHOLD=60
 
 cd "$REPO_PATH" || { echo "无法进入仓库目录"; exit 1; }
+
+# 如果本地没有未提交更改，则先 pull 远端最新代码
+if [ -z "$(git status --porcelain)" ]; then
+    echo "无未提交修改，自动拉取远端更新..."
+    git pull origin "$(git symbolic-ref --short HEAD)"
+else
+    echo "检测到本地未提交修改，跳过自动拉取。"
+fi
+
+# 然后执行自动提交和推送逻辑...
 
 # 获取上次 commit 的时间（Unix 时间戳）
 LAST_COMMIT_TIME=$(git log -1 --format=%ct 2>/dev/null || echo 0)

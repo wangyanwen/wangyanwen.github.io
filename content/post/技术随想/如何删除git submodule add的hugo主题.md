@@ -4,7 +4,7 @@ draft = false
 title = '如何删除git submodule add的hugo主题'
 +++
 
-删除git submodule add的hugo主题
+
 如果你在 Hugo 项目中使用了 Git Submodule 来添加主题，并且现在想要移除它，你可以按照以下步骤操作：
 
 ### **移除 Hugo 主题 Submodule**

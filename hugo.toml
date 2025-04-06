@@ -48,14 +48,19 @@ theme = "beautifulhugo"
   # github = "username"
 
 [[menu.main]]
-    name = "日常记录"
-    url = "post/日常记录/"
+    name = "日常生活"
+    url = "post/日常生活/"
     weight = 10
 
 [[menu.main]]
     name = "技术随想"
     url = "post/技术随想/"
     weight = 20
+
+[[menu.main]]
+    name = "资料日志"
+    url = "post/资料日志/"
+    weight = 30
 
 [[menu.main]]
     name = "About"

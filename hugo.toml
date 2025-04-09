@@ -45,7 +45,7 @@ theme = "beautifulhugo"
   name = "Wang"
   # website = "tech.juan-cool.com"
   # email = "youremail@qq.com"
-  # github = "username"
+  github = "https://github.com/wangyanwen"
 
 [[menu.main]]
     name = "日常生活"

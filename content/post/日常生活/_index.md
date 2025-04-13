@@ -5,6 +5,6 @@
 
 - **慢生活**真不是说说的，周日店铺都不开门。按法规周日所有店是要关闭休息的，想开张是要申请的（比如餐馆等）
 
-- chatgpt做的漫画风照片
+- 照片用chatgpt做的漫画风
 - 日漫风  ![图片描述](https://res.cloudinary.com/techjuan/image/upload/v1744546111/75dfb7c47a45d787a064b364e7400b34_o4xhdg.jpg)
 - 宫崎骏风  ![图片描述](https://res.cloudinary.com/techjuan/image/upload/v1744546263/da32e5cb-354a-4691-ac20-179e619d2257_riydsq.jpg)

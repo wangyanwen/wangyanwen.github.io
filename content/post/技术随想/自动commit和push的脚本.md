@@ -87,18 +87,13 @@ if ! git pull --rebase origin "$(git symbolic-ref --short HEAD)"; then
     osascript -e 'display notification "拉取远端更新失败，请手动解决冲突" with title "AutoPush Error"'
     # 如果之前暂存了，尝试恢复以避免丢失修改
     if [ "$STASHED" -eq 1 ]; then
-        git stash pop
+        echo "恢复暂存的修改..."
+        if ! git stash pop; then
+            osascript -e 'display notification "恢复暂存内容时产生冲突，请手动解决" with title "AutoPush Warning"'
+            exit 1
+        fi
     fi
     exit 1
-fi
-
-# 如果之前暂存了修改，恢复暂存内容
-if [ "$STASHED" -eq 1 ]; then
-    echo "恢复暂存的修改..."
-    if ! git stash pop; then
-        osascript -e 'display notification "恢复暂存内容时产生冲突，请手动解决" with title "AutoPush Warning"'
-        exit 1
-    fi
 fi
 
 # 检查上次提交时间，防止过于频繁提交

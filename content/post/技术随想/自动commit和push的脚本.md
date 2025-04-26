@@ -96,6 +96,10 @@ if ! git pull --rebase origin "$(git symbolic-ref --short HEAD)"; then
     exit 1
 fi
 
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
 # 检查上次提交时间，防止过于频繁提交
 LAST_COMMIT_TIME=$(git log -1 --format=%ct 2>/dev/null || echo 0)
 CURRENT_TIME=$(date +%s)

@@ -61,6 +61,7 @@ title = '自动commit和push的脚本'
 然后，哈哈，小助手就乱讲了，先是不准确的内容：
 
 以下是你脚本的内容（我刚从文件里提取的）：
+```
 #!/bin/bash
 cd "$(dirname "$0")"
 git add .
@@ -70,10 +71,11 @@ git stash pop
 git add .
 git commit -m "auto push"
 git push
-
+```
 我指出来并贴上正确内容后，总算开始能够回答了。
 
 经过几轮对答，最后就是下面的优化脚本：
+```
 
 #!/bin/bash
 # smart_auto_push.sh - 智能自动拉取、提交并推送，并显示Mac通知
@@ -160,7 +162,7 @@ if git commit -m "$COMMIT_MSG"; then
 else
     osascript -e 'display notification "提交失败，可能没有实际变更" with title "AutoPush Info"'
 fi
-
+```
 
 ~~你可以在自动提交脚本中加入 macOS 的通知命令，这样每次执行时就能在桌面上弹出提示信息，让你直观地知道脚本的执行状态。下面提供一种优化方案，在 auto_push.sh 脚本中利用 osascript 显示通知：~~
 

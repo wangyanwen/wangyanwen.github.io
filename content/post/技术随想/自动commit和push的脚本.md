@@ -56,11 +56,117 @@ title = '自动commit和push的脚本'
 
 这两种方式都能简化操作，让你只需点击桌面图标即可触发自动提交，非常适合需要手动执行但又希望操作简便的场景。选择你喜欢的方案试试吧！
 
-你可以在自动提交脚本中加入 macOS 的通知命令，这样每次执行时就能在桌面上弹出提示信息，让你直观地知道脚本的执行状态。下面提供一种优化方案，在 auto_push.sh 脚本中利用 osascript 显示通知：
+因为经常会报“恢复暂存内容时产生冲突，请手动解决”，将脚本上传并请教小助手如何优化这个脚本
 
----
+然后，哈哈，小助手就乱讲了，先是不准确的内容：
 
-### 示例：优化后的 auto_push.sh
+以下是你脚本的内容（我刚从文件里提取的）：
+#!/bin/bash
+cd "$(dirname "$0")"
+git add .
+git stash
+git pull
+git stash pop
+git add .
+git commit -m "auto push"
+git push
+
+我指出来并贴上正确内容后，总算开始能够回答了。
+
+经过几轮对答，最后就是下面的优化脚本：
+
+#!/bin/bash
+# smart_auto_push.sh - 智能自动拉取、提交并推送，并显示Mac通知
+
+# 配置仓库路径和最小提交间隔（秒）
+REPO_PATH="/Users/juan/MyBlog/wangyanwen.github.io"
+THRESHOLD=60  # 最小提交间隔（秒）
+
+cd "$REPO_PATH" || {
+    osascript -e 'display notification "无法进入仓库目录" with title "AutoPush Error"'
+    exit 1
+}
+
+# 先检测是否有本地未提交更改
+HAS_CHANGES=0
+if [ -n "$(git status --porcelain)" ]; then
+    HAS_CHANGES=1
+fi
+
+# 检查远端是否有更新
+git fetch origin
+
+LOCAL=$(git rev-parse @)
+REMOTE=$(git rev-parse @{u})
+BASE=$(git merge-base @ @{u})
+
+NEED_PULL=0
+if [ "$LOCAL" = "$REMOTE" ]; then
+    echo "本地已是最新，无需pull。"
+elif [ "$LOCAL" = "$BASE" ]; then
+    echo "远端有新提交，准备pull。"
+    NEED_PULL=1
+else
+    echo "本地提交领先远端，或者产生分叉，需要手动处理。"
+    osascript -e 'display notification "本地与远端分叉，请手动处理" with title "AutoPush Warning"'
+    exit 1
+fi
+
+# 如果远端有更新，需要pull --rebase --autostash
+if [ "$NEED_PULL" -eq 1 ]; then
+    echo "拉取远端更新..."
+    if ! git pull --rebase --autostash origin "$(git symbolic-ref --short HEAD)"; then
+        osascript -e 'display notification "拉取远端更新失败，请手动解决冲突" with title "AutoPush Error"'
+        exit 1
+    fi
+fi
+
+# 检查上次提交时间，防止频繁提交
+LAST_COMMIT_TIME=$(git log -1 --format=%ct 2>/dev/null || echo 0)
+CURRENT_TIME=$(date +%s)
+TIME_DIFF=$(( CURRENT_TIME - LAST_COMMIT_TIME ))
+if [ "$TIME_DIFF" -lt "$THRESHOLD" ]; then
+    echo "上次提交距今 ${TIME_DIFF}s，低于阈值 ${THRESHOLD}s，跳过提交。"
+    osascript -e 'display notification "提交间隔不足，已跳过自动提交" with title "AutoPush Info"'
+    exit 0
+fi
+
+# 再次检测是否有更改需要提交
+if [ "$HAS_CHANGES" -eq 0 ]; then
+    echo "没有检测到新的本地更改，跳过提交。"
+    osascript -e 'display notification "未检测到更改" with title "AutoPush Info"'
+    exit 0
+fi
+
+# 准备提交
+NUM_CHANGED_FILES=$(git status --porcelain | wc -l | tr -d ' ')
+DEFAULT_MSG="Auto commit at $(date '+%Y-%m-%d %H:%M:%S'): ${NUM_CHANGED_FILES} file(s) changed."
+
+if [ -n "$CUSTOM_COMMIT_MSG" ]; then
+    COMMIT_MSG="$CUSTOM_COMMIT_MSG"
+else
+    COMMIT_MSG="$DEFAULT_MSG"
+fi
+
+echo "提交信息：$COMMIT_MSG"
+
+git add .
+if git commit -m "$COMMIT_MSG"; then
+    if git push origin "$(git symbolic-ref --short HEAD)"; then
+        osascript -e 'display notification "自动提交与推送成功" with title "AutoPush Success"'
+    else
+        osascript -e 'display notification "推送到远端失败，请手动检查" with title "AutoPush Error"'
+    fi
+else
+    osascript -e 'display notification "提交失败，可能没有实际变更" with title "AutoPush Info"'
+fi
+
+
+~~你可以在自动提交脚本中加入 macOS 的通知命令，这样每次执行时就能在桌面上弹出提示信息，让你直观地知道脚本的执行状态。下面提供一种优化方案，在 auto_push.sh 脚本中利用 osascript 显示通知：~~
+
+~~---~~
+
+### ~~示例：优化后的 auto_push.sh~~
 
 ```bash
 #!/bin/bash
@@ -140,49 +246,49 @@ else
 fi
 ```
 
----
+~~---~~
 
-### 脚本说明
+### ~~脚本说明~~
 
-1. **加入通知**  
-    每个关键步骤后使用 `osascript -e 'display notification "消息内容" with title "标题"'` 来显示提示信息。例如：
+1. ~~**加入通知**~~  
+    ~~每个关键步骤后使用 `osascript -e 'display notification "消息内容" with title "标题"'` 来显示提示信息。例如：~~
     
-    - 无法进入仓库目录时显示错误通知。
+    - ~~无法进入仓库目录时显示错误通知。~~
         
-    - 拉取更新失败、恢复暂存失败时显示错误或警告通知。
+    - ~~拉取更新失败、恢复暂存失败时显示错误或警告通知。~~
         
-    - 成功提交和推送后显示成功通知。
+    - ~~成功提交和推送后显示成功通知。~~
         
-2. **优化执行流程**
+2. ~~**优化执行流程**~~
     
-    - 如果工作区有未提交更改，则先 stash，执行 rebase 后恢复 stash，降低冲突风险。
+    - ~~如果工作区有未提交更改，则先 stash，执行 rebase 后恢复 stash，降低冲突风险。~~
         
-    - 使用 `git pull --rebase` 同步远端更新。
+    - ~~使用 `git pull --rebase` 同步远端更新。~~
         
-    - 检查上次提交时间，避免过于频繁的自动提交。
+    - ~~检查上次提交时间，避免过于频繁的自动提交。~~
         
-3. **自定义提交信息**  
-    根据更改的文件数量和当前时间生成默认提交信息，同时支持通过环境变量 `CUSTOM_COMMIT_MSG` 自定义提交信息。
+3. ~~**自定义提交信息**~~  
+    ~~根据更改的文件数量和当前时间生成默认提交信息，同时支持通过环境变量 `CUSTOM_COMMIT_MSG` 自定义提交信息。~~
     
 
----
+~~---~~
 
-### 使用方法
+### ~~使用方法~~
 
-1. **保存脚本**  
-    将上面脚本保存为 `optimized_auto_push.sh` 并替换路径。
+1. ~~**保存脚本**~~  
+    ~~将上面脚本保存为 `optimized_auto_push.sh` 并替换路径。~~
     
-2. **赋予执行权限**
+2. ~~**赋予执行权限**~~
     
     ```bash
     chmod +x optimized_auto_push.sh
     ```
     
-3. **在桌面创建快捷方式**  
-    你可以使用 Automator 创建应用程序或者直接创建一个 `.command` 文件（参考前面的回答），双击即可执行该脚本，并弹出 macOS 通知显示执行结果。
+3. ~~**在桌面创建快捷方式**~~  
+    ~~你可以使用 Automator 创建应用程序或者直接创建一个 `.command` 文件（参考前面的回答），双击即可执行该脚本，并弹出 macOS 通知显示执行结果。~~
     
 
-这样，你就可以在手动点击触发自动提交脚本时，通过桌面提示消息及时了解脚本运行状态，实现一个更优雅的体验。
+~~这样，你就可以在手动点击触发自动提交脚本时，通过桌面提示消息及时了解脚本运行状态，实现一个更优雅的体验。~~
 
 ~~下面提供一个基于 fswatch 的自动更新方案示例，满足以下需求：~~
 

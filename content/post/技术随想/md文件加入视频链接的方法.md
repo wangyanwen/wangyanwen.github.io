@@ -41,11 +41,11 @@ Hugo 0.60版本之后，默认启用了 Goldmark Safe Mode，禁止了 Markdown 
 
 问题：`.md` 文件里按下面写会显示无法加载视频界面，而不是我期望的示例代码？
 
-{{% raw %}}
+`{{% raw %}}`
 ``` markdown
 {{< video src="https://res.cloudinary.com/你的cloud_name/video/upload/f_auto,q_auto/你的public_id" >}}
 ```
-{{% /raw %}}
+`{{% /raw %}}`
 
 gpt：明白了！你只是想在 .md 文件里展示你写的代码示例，不是真正插入视频对吧？
 

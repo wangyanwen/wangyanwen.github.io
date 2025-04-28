@@ -24,14 +24,14 @@ Hugo 0.60版本之后，默认启用了 Goldmark Safe Mode，禁止了 Markdown 
 
 在你的 Hugo 项目的 `layouts/shortcodes/` 目录下，创建一个 `video.html` 文件，内容：
 
-```html
+``` html
 <video src="{{ .Get "src" }}" controls style="max-width: 100%;" preload="metadata"></video>
 ```
 
 然后在你的 `.md` 文件里这样写：
 
-```markdown
-{{< video src="https://res.cloudinary.com/你的cloud_name/video/upload/f_auto,q_auto/你的public_id" >}}
+``` markdown
+{{</* video src="https://res.cloudinary.com/你的cloud_name/video/upload/f_auto,q_auto/你的public_id" */>}}
 ```
 
 这样更安全、统一、且支持 Hugo 各种主题。

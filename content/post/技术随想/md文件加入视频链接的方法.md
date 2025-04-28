@@ -51,8 +51,7 @@ gpt：明白了！你只是想在 .md 文件里展示你写的代码示例，不
 
 为什么会这样？
 
-  因为 Hugo 默认 .md 文件里的``` {{<  >}}```
-是Shortcode语法，即使你包在 Markdown 代码块里，它还是会解析执行，不会单纯地显示出来。
+因为 Hugo 默认 .md 文件里的``` {{<  >}}```是Shortcode语法，即使你包在 Markdown 代码块里，它还是会解析执行，不会单纯地显示出来。
 
 正确解决方法
 
@@ -69,11 +68,10 @@ gpt：明白了！你只是想在 .md 文件里展示你写的代码示例，不
 比如这样写：
 
 {{% raw %}}
-
 ```markdown
 
 {{< video src="https://res.cloudinary.com/你的cloud_name/video/upload/f_auto,q_auto/你的public_id" >}}
-
+```
 {{% /raw %}}
 
 这样 Hugo也不会执行 `{{< video >}}`，而是直接原样输出。

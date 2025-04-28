@@ -36,3 +36,47 @@ Hugo 0.60版本之后，默认启用了 Goldmark Safe Mode，禁止了 Markdown 
 
 这样更安全、统一、且支持 Hugo 各种主题。
 
+---
+**学习资料：**
+
+问题：`.md` 文件里按下面写会显示无法加载视频界面，而不是我期望的示例代码？
+
+{{% raw %}}
+``` markdown
+{{< video src="https://res.cloudinary.com/你的cloud_name/video/upload/f_auto,q_auto/你的public_id" >}}
+```
+{{% /raw %}}
+
+gpt：明白了！你只是想在 .md 文件里展示你写的代码示例，不是真正插入视频对吧？
+
+而且你用的是 Markdown 的代码块标记（就是三个反引号），但是实际上 Hugo 把它当成真正的 Shortcode 执行了，所以它去加载了` <video>`，结果又找不到视频，才出错。
+
+为什么会这样？
+
+  因为 Hugo 默认 .md 文件里的 {{< ... >}} 是Shortcode语法，即使你包在 Markdown 代码块里，它还是会解析执行，不会单纯地显示出来。
+
+正确解决方法
+
+要让 Hugo 只显示文字内容而不是执行 Shortcode，有两种做法：
+
+方法一：用 {{<`/* */`>}} 包裹
+
+比如像上面写的一样
+
+注意，加了` /* */`，Hugo 就不会执行里面的 shortcode，只是把它当普通文本显示。
+
+方法二：用 {{% raw %}} ... {{% /raw %}} 包住
+
+比如这样写：
+
+{{% raw %}}
+
+```markdown
+
+{{< video src="https://res.cloudinary.com/你的cloud_name/video/upload/f_auto,q_auto/你的public_id" >}}
+
+{{% /raw %}}
+
+这样 Hugo也不会执行 `{{< video >}}`，而是直接原样输出。
+
+这种方法适合你文档中有很多段需要展示 Hugo 代码的情况。

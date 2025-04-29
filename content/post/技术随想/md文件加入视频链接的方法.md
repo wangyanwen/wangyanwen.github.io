@@ -57,26 +57,25 @@ gpt：明白了！你只是想在 .md 文件里展示你写的代码示例，不
 
 要让 Hugo 只显示文字内容而不是执行 Shortcode，有两种做法：
 
-{{</*
 
-方法一：用 {{</* */>}} 包裹
+
+方法一：用 `{{</*`  `*/ >}}` 包裹
 
 比如像上面写的一样
 
 注意，加了`/* */`，Hugo 就不会执行里面的 shortcode，只是把它当普通文本显示。
 
 
-方法二：用{{%/* raw */% }} ... {{ %/* /raw */% }}包住
+方法二：用`{{%` raw `%}}` ... `{{ %` /raw `%}}`包住
 
 比如这样写：
 
-{{%/* raw */%}}
+`{{%` raw `%}}`
 
-{{< video src="https://res.cloudinary.com/你的cloud_name/video/upload/f_auto,q_auto/你的public_id" >}}
+{{</* video src="https://res.cloudinary.com/你的cloud_name/video/upload/f_auto,q_auto/你的public_id" */>}}
 
-{{%/* /raw */%}}
+`{{%` /raw `%}}`
 
-*/>}}
 
 这样 Hugo也不会执行 `{{</* video */>}}`，而是直接原样输出。
 

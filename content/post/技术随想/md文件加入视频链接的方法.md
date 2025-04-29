@@ -71,7 +71,7 @@ gpt：明白了！你只是想在 .md 文件里展示你写的代码示例，不
 
 {{% raw %}}
 ```markdown
-
+```text
 {{< video src="https://res.cloudinary.com/你的cloud_name/video/upload/f_auto,q_auto/你的public_id" >}}
 ```
 {{% /raw %}}

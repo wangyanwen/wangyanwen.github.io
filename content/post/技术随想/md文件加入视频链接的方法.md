@@ -66,17 +66,12 @@ gpt：明白了！你只是想在 .md 文件里展示你写的代码示例，不
 注意，加了`/* */`，Hugo 就不会执行里面的 shortcode，只是把它当普通文本显示。
 
 
-方法二：用`{{%`  `raw`  `%}}` `{{%`  `/raw`  `%}}`包住
+方法二：使用 Hugo 的 HTML 实体编码（最通用）
+
+将 `{` 替换为 `&#123;`， `<` 替换为 `&lt;`，`>` 替换为 `&gt;`，`}` 替换为 `&#125;`，这样 Hugo 根本识别不了 shortcode。
 
 比如这样写：
 
-`{{%` raw `%}}`
+&#123;&#123;&lt; video src="https://res.cloudinary.com/你的cloud_name/video/upload/f_auto,q_auto/你的public_id" &gt;&#125;&#125;
 
-`{{<` video src="https://res.cloudinary.com/你的cloud_name/video/upload/f_auto,q_auto/你的public_id" `>}}`
-
-`{{%` /raw `%}}`
-
-
-这样 Hugo也不会执行 `{{<` video `>}}`，而是直接原样输出。
-
-这种方法适合你文档中有很多段需要展示 Hugo 代码的情况。
+这是**最安全、最兼容 Hugo 所有版本**的做法。

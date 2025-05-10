@@ -1,5 +1,5 @@
 
-# <center>Flag</center>
+#  <center>Flag</center>
 
 **第一个**  
 - [ ] 仔6月底放假前，看完西语A1阶段85节课。加油！  
@@ -9,3 +9,5 @@
 - [x] 法雅节图片视频  
 
 ---
+**第三个**  
+- [ ] 搭建免费Oracle Cloud节点，仔可以看BBC动画。  

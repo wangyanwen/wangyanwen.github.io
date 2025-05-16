@@ -81,7 +81,87 @@ Country: Spain
 
 💰 推荐准备约 £2~5 余额，以避免验证失败（Oracle 会扣约 £1 后退还）
 
+**revolut入帐方式哪种免费，apple pay绑定的wise卡充值、easy bank transfer、regular bank transfer，后2种银行转账的区别**
+
+非常好的问题！下面我为你全面梳理 Revolut 的三种入账方式，并标出各自的费用、速度、适用性 —— 尤其是你已经拥有 Wise 卡的场景：
+
 ---
+
+## 🧾 Revolut 入账方式对比
+
+|入账方式|是否免费|到账速度|是否推荐|说明|
+|---|---|---|---|---|
+|**1. 绑定 Wise 卡充值（如 Apple Pay）**|✅ 通常免费¹|**立即到账**|✅ 推荐|方便快捷，适合小额快速入账|
+|**2. Easy Bank Transfer（快速银行转账）**|✅ 免费|通常几分钟内到账|⚠️ 部分银行支持|基于英国 Open Banking，**Wise 不支持该通道**|
+|**3. Regular Bank Transfer（常规银行转账）**|✅ 免费（SEPA）⚠️ 有时汇款银行会收费|**0–1个工作日**|✅ 推荐（适合大额）|使用 Revolut 提供的 EUR/GBP IBAN 转入，适合从 Wise 转账|
+
+> ¹ 注：Wise 卡充值到 Revolut 是否免费，**取决于 Wise 卡的币种和账户设置**，GBP → GBP 一般免费，EUR → EUR 视 Wise 设置而定。
+
+---
+
+## 🔍 三种方式详解
+
+### ✅ 1. Apple Pay / 添加 Wise 卡（即时充值）
+
+- 方式：在 Revolut 添加 Wise Visa 卡，通过 Apple Pay 或直接绑卡充值
+    
+- 优点：**立即到账**、**无需手续费（通常）**
+    
+- 限制：
+    
+    - 有时 Wise 会限制「信用卡风控类」充值（尤其非 GBP）
+        
+    - 单日/单笔金额有限（如 100–500 EUR）
+        
+- 推荐用途：快速测试、Oracle 充值用的 1€ 费用验证
+    
+
+---
+
+### ✅ 2. Easy Bank Transfer（快速转账 / Open Banking）
+
+- 机制：英国本地银行通过 Open Banking API 与 Revolut 交互转账
+    
+- 要求：发起方银行必须支持 Open Banking 协议（如 Barclays、Monzo 等）
+    
+- ⚠️ 注意：**Wise 不属于英国本地银行**，因此你**无法从 Wise 发起此类转账**
+    
+- 推荐用途：英国本地银行账户转入
+    
+
+---
+
+### ✅ 3. Regular Bank Transfer（普通银行转账）
+
+- 使用方式：从 Wise EUR 账户向 Revolut 的 EUR IBAN 汇款（或 GBP → GBP）
+    
+- 支持 SEPA（欧元区）和 Faster Payments（英镑区）
+    
+- 一般步骤：
+    
+    1. 登录 Revolut → Add Money → Bank Transfer → 复制你的 IBAN
+        
+    2. 到 Wise → 选择转账 → 收款人填你的 Revolut IBAN
+        
+    3. 说明字段加上你的 Revolut 用户名或参考码（可选）
+        
+- 到账时间：几分钟至1个工作日
+    
+- 适合大额、稳定充值
+    
+
+---
+
+## 🏁 总结推荐方案（基于你已有 Wise）
+
+|场景|推荐方式|理由|
+|---|---|---|
+|Oracle Cloud 注册时验证卡（1€）|✅ Apple Pay + Wise 卡|即时到账，验证速度快|
+|平时大额入账|✅ Wise → Revolut 银行转账（SEPA）|免费、稳定、安全|
+|尝试 Easy Bank Transfer|❌ 不推荐|Wise 不支持该模式|
+
+---
+
 
 ## ✅ 第三步：注册 Oracle Cloud 英国节点账户
 

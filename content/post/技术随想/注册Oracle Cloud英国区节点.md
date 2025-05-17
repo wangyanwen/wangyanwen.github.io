@@ -4,6 +4,97 @@ draft = false
 title = '注册Oracle Cloud英国区节点'
 +++
 
+**按小助手给出的建议还是错误不断，需要不断修正完善。**
+
+**实测：Revolut虚拟卡注册通不过**
+
+使用revolut虚拟卡注册报错：Your bank has identified this card as a prepaid, virtual, or single use card. Oracle does not accept these card types for account sign up. Please edit the payment method and enter a different card. See FAQ for more information. If you have received this message in error, please contact Oracle Customer Service.  
+
+**gpt：** 这是 Oracle Cloud 注册时的**常见报错**，你遇到的错误说明如下：
+
+---
+
+## ❌ 错误解释：
+
+> **“Your bank has identified this card as a prepaid, virtual, or single use card...”**
+
+Oracle 检测到你用的是：
+
+- **预付费卡（Prepaid）**
+    
+- 或 **虚拟卡（Virtual）**
+    
+- 或 **一次性卡（Single-use）**
+    
+
+这类卡通常会被 **自动拒绝**，用于防止欺诈注册。
+
+---
+
+## ✅ 当前情况分析（Revolut 虚拟卡）：
+
+|项目|状态|
+|---|---|
+|卡类型|Virtual Prepaid Debit（预付虚拟卡）❌|
+|卡网络|Visa / Mastercard ✅（无影响）|
+|账单地址|英国 ✅（已匹配）|
+|是否常见被拒|✅ Revolut 虚拟卡被 Oracle 拒绝的几率很高|
+
+---
+
+## ✅ 解决方案建议（按推荐顺序）
+
+### 🔹 1. **使用实体卡代替虚拟卡（推荐）**
+
+- 你可以在 Revolut 中申请一张 **实体实体卡（Physical Card）**，到账后再注册。
+    
+- 实体卡成功率更高（被识别为更稳定、可验证）
+    
+
+### 🔹 2. **尝试 Wise 实体卡**
+
+- 如果你已有 Wise GBP 账户，可以申请一张实体卡（或已持有）
+    
+- Wise 实体卡成功注册 Oracle 的成功率比虚拟卡高很多
+    
+
+### 🔹 3. **尝试其它虚拟卡服务商（成功率更高）**
+
+|平台|特点|是否可选|
+|---|---|---|
+|**Monese**|英国地址 + 虚拟/实体卡|✅ 有用户成功注册|
+|**N26（德国）**|可绑定欧元 + 英国地址，成功率一般|⚠️ 需要注意地址匹配|
+|**Privacy.com / DCC**|✅ 美国地址/卡，**不适用于英国注册**|❌ 不推荐用于 Oracle UK|
+
+---
+
+### 🔹 4. **联系客服人工审核**
+
+你也可以尝试：
+
+- 用当前卡信息提交注册后 **联系 Oracle 客服（电话/工单）**
+    
+- 告知这是你的真实银行卡，绑定了你个人名下
+    
+- 有时 Oracle 会 **手动放行卡片验证**
+    
+
+不过这个方法成功率不如实体卡直接注册。
+
+---
+
+## ✅ 推荐操作总结：
+
+|操作|说明|
+|---|---|
+|✅ 立即操作|申请 Revolut 实体卡（预计 5–7 天寄达）|
+|✅ 替代选项|使用 Wise 实体卡（已有者优先）|
+|❌ 不推荐|继续尝试 Revolut 虚拟卡，多次失败可能触发封号|
+|⚠️ 可选|联系 Oracle 人工放行，视情况而定|
+
+---
+待修正。。。。
+
 以下是**完全符合你身份背景和目标用途的 Revolut 注册+Oracle Cloud 注册资料填写指南**，适用于：
 
 - 持 **中国护照**
@@ -21,13 +112,15 @@ title = '注册Oracle Cloud英国区节点'
 
 ## 🧭 总体原则
 
-- **地址保持一致性**：Revolut 注册地址 = Oracle 账单地址
+- ~~**地址保持一致性**：Revolut 注册地址 = Oracle 账单地址~~ 这条没法做到，因为Revolut注册需要使用西班牙地址，但Oracle cloud英国区节点注册时帐号信息中“国家”需要选择英国，后面的地址信息就需要用到英国地址，试了西班牙地址邮编是不一样的，通不过。西班牙邮编是5位数字，英国邮编是类似“NW1 6XE”这种，中间有空格。
+
+- **经验证通过的地址组合：** Revolut注册用西班牙居留地址，Oracle cloud注册用Revolut申请的GBP帐户地址。
     
 - **身份保持真实**：使用西班牙居留和中国护照资料，无需冒用英国信息
     
-- **卡账单地址不需是英国**，Oracle 校验的是“卡地址与卡片发行行记录是否一致”
+- ~~**卡账单地址不需是英国**，Oracle 校验的是“卡地址与卡片发行行记录是否一致”~~
     
-- Oracle 可部署英国节点资源，不要求英国银行卡或地址
+- ~~Oracle 可部署英国节点资源，不要求英国银行卡或地址~~
     
 
 ---

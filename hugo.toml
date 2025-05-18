@@ -36,7 +36,7 @@ pygmentsCodeFences = true
   delayDisqus = true
   showRelatedPosts = true
   showtoc = true
-  tocopen = true # 页面加载时目录是否默认展开
+  tocopen = false # 页面加载时目录默认折叠（true展开）
 
 #  cusdisID = "XXX" # Get your App id from cusdis.com
 #  hideAuthor = true

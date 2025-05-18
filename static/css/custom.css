@@ -1,0 +1,29 @@
+details.toc {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 1em;
+  margin-bottom: 2em;
+  font-size: 0.95em;
+}
+
+details.toc summary {
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 0.5em;
+}
+
+details.toc nav {
+  margin-top: 0.5em;
+}
+
+details.toc ul {
+  list-style: none;
+  padding-left: 1em;
+}
+
+details.toc ul li::before {
+  content: "• ";
+  color: #999;
+}
+

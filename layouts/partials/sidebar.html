@@ -1,0 +1,28 @@
+<div class="sidebar">
+  {{ if .Site.Params.author }}
+  <div class="authorbox">
+    <img src="{{ .Site.Params.avatar }}" class="authoravatar" alt="Author Avatar">
+    <p class="authorname">{{ .Site.Params.author }}</p>
+  </div>
+  {{ end }}
+
+  {{ if .Site.Menus.main }}
+  <nav>
+    <ul class="menu">
+      {{ range .Site.Menus.main }}
+        <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+      {{ end }}
+    </ul>
+  </nav>
+  {{ end }}
+
+  <section>
+    <h4>📚 所有文章</h4>
+    <ul class="articlelist">
+      {{ range (where .Site.RegularPages "Type" "post") }}
+        <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+      {{ end }}
+    </ul>
+  </section>
+</div>
+

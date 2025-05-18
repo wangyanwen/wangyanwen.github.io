@@ -35,6 +35,9 @@ pygmentsCodeFences = true
   socialShare = false
   delayDisqus = true
   showRelatedPosts = true
+  showtoc = true
+#  tocopen = true # 页面加载时目录是否默认展开
+
 #  cusdisID = "XXX" # Get your App id from cusdis.com
 #  hideAuthor = true
 #  gcse = "012345678901234567890:abcdefghijk" # Get your code from google.com/cse. Make sure to go to "Look and Feel" and change Layout to "Full Width" and Theme to "Classic"

@@ -1,19 +1,51 @@
-.sidebar .articlelist {
+/* 侧边栏总体布局 */
+.sidebar {
+  position: absolute;
+  top: 100px;                /* 页面向下留白 */
+  right: 30px;               /* 贴近右侧但不贴边 */
+  width: 260px;
+  padding: 1rem;
+  font-size: 1.4rem;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  color: #333;               /* 次要文本色 */
+  backdrop-filter: blur(10px); /* 毛玻璃效果 */
+  z-index: 999;
+}
+
+/* 列表样式 */
+.sidebar h4 {
+  font-size: 1.6rem;
+  margin-bottom: 0.8rem;
+}
+
+.sidebar ul {
   list-style: none;
   padding-left: 0;
-  font-size: 0.9em;
+  margin: 0;
 }
 
-.sidebar .articlelist li {
-  margin-bottom: 0.4em;
+.sidebar li {
+  margin-bottom: 0.6rem;
 }
 
-.sidebar .articlelist a {
+.sidebar a {
   text-decoration: none;
   color: #333;
 }
 
-.sidebar .articlelist a:hover {
+.sidebar a:hover {
   text-decoration: underline;
+  color: #000;
+}
+
+/* 响应式隐藏（移动设备不显示） */
+@media (max-width: 992px) {
+  .sidebar {
+    display: none;
+  }
 }
 

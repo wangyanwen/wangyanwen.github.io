@@ -1,12 +1,24 @@
 +++
-date = '2025-05-12T19:32:19+02:00'
+date = '2025-06-27T18:32:19+02:00'
 draft = false
-title = '注册Oracle Cloud英国区节点'
+title = '注册Oracle Cloud英国区节点（失败，待更新）'
 +++
+
+**待更新。。。**
+
+-- **实测：Revolut实体卡仍不通过**
+
+<u>特意申请了Revolut的实体卡，花了邮费英镑6.99，体验了一把西班牙邮政的速度（要把预计时间再推后一星期左右），但申请还是没通过。</u>
+
+错误信息：*"Error processing transaction Your bank has identified this card as a prepaid, virtual, or single use card. Oracle does not accept these card types for account sign up. ".*
+
+没办法，死马当活马医，发了个incident给后台，等回复吧。
+
+---
 
 **按小助手给出的建议还是错误不断，需要不断修正完善。**
 
-**实测：Revolut虚拟卡注册通不过**
+-- **实测：Revolut虚拟卡注册通不过**
 
 使用revolut虚拟卡注册报错：Your bank has identified this card as a prepaid, virtual, or single use card. Oracle does not accept these card types for account sign up. Please edit the payment method and enter a different card. See FAQ for more information. If you have received this message in error, please contact Oracle Customer Service.  
 

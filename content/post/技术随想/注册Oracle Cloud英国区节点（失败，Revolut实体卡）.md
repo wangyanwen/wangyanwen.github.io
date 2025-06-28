@@ -1,10 +1,18 @@
 +++
-date = '2025-06-27T18:32:19+02:00'
+date = '2025-06-28T15:32:19+02:00'
 draft = false
-title = '注册Oracle Cloud英国区节点（失败，待更新）'
+title = '注册Oracle Cloud英国区节点（失败，Revolut实体卡）'
 +++
 
-**待更新。。。**
+**Oracle Cloud回复：**
+
+“Hello,
+
+Unfortunately, we are unable to resolve this or process the transaction. This is all the information we can provide.
+
+Regards,
+
+Customer Service Agent”
 
 -- **实测：Revolut实体卡仍不通过**
 

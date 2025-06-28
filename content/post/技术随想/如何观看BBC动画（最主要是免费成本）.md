@@ -4,6 +4,10 @@ draft = false
 title = '如何观看BBC动画（最主要是免费成本）'
 +++
 
+**实测：Revolut实体卡无法注册Oracle cloud.***（暂时还没找到免费的英国区云资源）*
+
+---
+
 看到微信公号上推荐的BBC动画《Tinpo》，STEM类型，在youtube上搜索看了下，挺好的，但只有10集试播。
 
 小助手回答了，只能在英国地区看官方iplayer，下面是给出的解决方案，免费，哈哈，这是最主要的。
@@ -177,13 +181,13 @@ BBC iPlayer 是 **免费的**，不需要付费会员，但有以下几点需要
 
 ## 🧰 一、准备工作
 
-### 1. 注册 Oracle Cloud 免费账户
+### ~~1. 注册 Oracle Cloud 免费账户~~
 
-👉 官网：[https://www.oracle.com/cloud/free](https://www.oracle.com/cloud/free)
+~~👉 官网：[https://www.oracle.com/cloud/free](https://www.oracle.com/cloud/free)~~
 
-- 注册时需提供信用卡验证（不会扣费）
+- ~~注册时需提供信用卡验证（不会扣费）~~
     
-- 完成后，进入 Oracle Cloud 控制台
+- ~~完成后，进入 Oracle Cloud 控制台~~
     
 
 ---

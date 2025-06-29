@@ -276,31 +276,31 @@ Country: Spain
 ---
 
 
-## ✅ 第三步：注册 Oracle Cloud 英国节点账户
+## ~~✅ 第三步：注册 Oracle Cloud 英国节点账户~~
 
-### 📋 Oracle 注册填写示例（与 Revolut 保持一致）：
+### ~~📋 Oracle 注册填写示例（与 Revolut 保持一致）：~~
 
-|字段|示例填写|说明|
-|---|---|---|
-|Name|LI Hua|与卡一致即可|
-|Country|Spain|实际国家|
-|Billing Address|Calle Gran Vía 45, Piso 3, Puerta B, Madrid, 28013|与 Revolut 完全一致|
-|Card Info|Revolut 虚拟卡信息|包括卡号、有效期、安全码|
-|Phone|+34 西班牙手机号|任意可接收短信手机号|
-|Email|Gmail 等|与 Revolut 可一致或不同|
-|Region|United Kingdom (London)|目标部署地区，无需英国信息|
+| 字段                  | 示例填写                                                   | 说明                   |
+| ------------------- | ------------------------------------------------------ | -------------------- |
+| ~~Name~~            | ~~LI Hua~~                                             | ~~与卡一致即可~~           |
+| ~~Country~~         | ~~Spain~~                                              | ~~实际国家~~             |
+| ~~Billing Address~~ | ~~Calle Gran Vía 45, Piso 3, Puerta B, Madrid, 28013~~ | ~~与 Revolut 完全一致~~   |
+| ~~Card Info~~       | ~~Revolut 虚拟卡信息~~                                      | ~~包括卡号、有效期、安全码~~     |
+| ~~Phone~~           | ~~+34 西班牙手机号~~                                         | ~~任意可接收短信手机号~~       |
+| ~~Email~~           | ~~Gmail 等~~                                            | ~~与 Revolut 可一致或不同~~ |
+| ~~Region~~          | ~~United Kingdom (London)~~                            | ~~目标部署地区，无需英国信息~~    |
 
-✅ Oracle 账单地址只需与卡账单一致，**不强制英国地址/银行卡**
+~~✅ Oracle 账单地址只需与卡账单一致，**不强制英国地址/银行卡**~~
 
----
+~~---~~
 
-## ✅ 最终结果
+## ~~✅ 最终结果~~
 
-|项目|状态|
-|---|---|
-|Revolut 虚拟卡激活|✅ 成功（西班牙地址）|
-|Oracle Cloud 注册|✅ 成功（账单地址一致）|
-|资源部署|✅ 可选 United Kingdom 区域（用于 BBC 解锁）|
+| 项目                  | 状态                                    |
+| ------------------- | ------------------------------------- |
+| Revolut 实体卡激活       | ✅ 成功（西班牙地址）                           |
+| ~~Oracle Cloud 注册~~ | ~~✅ 成功（账单地址一致）~~                      |
+| ~~资源部署~~            | ~~✅ 可选 United Kingdom 区域（用于 BBC 解锁）~~ |
 
 ---
 

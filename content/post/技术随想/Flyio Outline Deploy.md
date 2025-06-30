@@ -246,8 +246,24 @@ cat /opt/outline/access.txt
 
 # ✅ Fly.io Outline VPN 部署包（带 IPv4 + Volume 支持）
 
-# 👉 第一步：初始化目录
+# 👉 第一步：初始化目录并准备环境
+
+```bash
 mkdir fly-outline && cd fly-outline
+```
+
+确保本地已有：
+
+```bash
+fly --version    # 安装 Fly.io CLI
+docker --version # 若使用自定义镜像构建
+```
+
+如未安装：
+
+```bash
+curl -L https://fly.io/install.sh | sh
+```
 
 # 👉 第二步：创建 Dockerfile
 

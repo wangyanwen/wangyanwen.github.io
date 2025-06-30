@@ -297,6 +297,8 @@ fly scale count 1
 
 # 🎉 完成！使用 Outline Manager 管理 VPN，支持 QR 扫码，随时控制密钥权限。
 
+---
+
 **问题：fly.io实例如果部署outline，会分配ipv4地址吗？免费时间不够，不用的时候停机是不是不算使用的免费时间，再开机是不是又要重新连接配置outline**
 
 这是关于你提出的几个关键问题在 **Fly.io 上部署 Outline Server** 时的详解回答：

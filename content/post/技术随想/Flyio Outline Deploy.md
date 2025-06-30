@@ -250,12 +250,13 @@ cat /opt/outline/access.txt
 mkdir fly-outline && cd fly-outline
 
 # 👉 第二步：创建 Dockerfile
+
 ```bash
 cat <<EOF > Dockerfile
 FROM ghcr.io/jigsaw-code/outline-server:latest
 EOF
 ```
-```
+
 # 👉 第三步：创建 fly.toml（请将 app 名改成你自己的唯一名称）
 
 ```bash
@@ -276,26 +277,26 @@ primary_region = "lhr"  # 🗽  英国伦敦lhr，美国东部iad（华盛顿）
   ports = [{ port = 443 }]
 EOF
 ```
-```
+
 # 👉 第四步：登录 Fly.io 并初始化项目
 
 ```bash
 fly auth login
 fly launch --no-deploy  # 不要自动部署，我们还需要设置 volume
 ```
-```
+
 # 👉 第五步：创建 Volume（持久化 Outline 配置）
 
 ```bash
 fly volumes create outline_data --region lhr --size 3
 ```
-```
+
 # 👉 第六步：申请公网 IPv4 地址（可选但推荐）
 
 ```bash
 fly ips allocate-v4
 ```
-```
+
 # 👉 第七步：部署实例
 
 ```bash
@@ -307,19 +308,19 @@ fly deploy
 fly ssh console
 cat /opt/outline/access.txt  # 复制 JSON 粘贴到 Outline Manager 客户端
 ```
-```
+
 # 👉 停止实例节省额度
 
 ```bash
 fly scale count 0
 ```
-```
+
 # 👉 重新开启服务
 
 ```bash
 fly scale count 1
 ```
-```
+
 # 🎉 完成！使用 Outline Manager 管理 VPN，支持 QR 扫码，随时控制密钥权限。
 
 ---

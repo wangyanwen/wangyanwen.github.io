@@ -1,6 +1,6 @@
 +++
 date = '2025-06-30T13:32:19+02:00'
-draft = false
+draft = true
 title = 'Flyio Outline Deploy'
 +++
 
@@ -301,17 +301,94 @@ fly auth login
 fly launch --no-deploy  # 不要自动部署，我们还需要设置 volume
 ```
 
+弹出提示：
+
+An existing fly.toml file was found for app outline-server-uk-bbc?
+
+**Would you like to copy its configuration to the new app?** (y/N) y
+
+Using build strategies '[the "ghcr.io/jigsaw-code/outline-server:latest" docker image]'. Remove [build] from fly.toml to force a rescan
+
+Warning: This organization has no payment method, turning off high availability
+
+Creating app in /Users/juan/fly-outline
+
+We're about to launch your app on Fly.io. Here's what you're getting:
+
+  
+Organization: Wang Yanwen            (fly launch defaults to the personal org)
+
+Name:         outline-server-uk-bbc  (from your fly.toml)
+
+Region:       London, United Kingdom (from your fly.toml)
+
+App Machines: shared-cpu-1x, 1GB RAM (most apps need about 1GB of RAM)
+
+Postgres:     <none>                 (not requested)
+
+Redis:        <none>                 (not requested)
+
+Tigris:       <none>                 (not requested)
+
+**Do you want to tweak these settings before proceeding?** (y/N)No
+
+Created app 'outline-server-uk-bbc' in organization 'personal'
+
+Admin URL: https://fly.io/apps/outline-server-uk-bbc
+
+Hostname: outline-server-uk-bbc.fly.dev
+
+Wrote config file fly.toml
+
+Validating /Users/juan/fly-outline/fly.toml
+
+✓ Configuration is valid
+
+Your app is ready! Deploy with `flyctl deploy`
+
 # 👉 第五步：创建 Volume（持久化 Outline 配置）
 
 ```bash
 fly volumes create outline_data --region lhr --size 3
 ```
+Warning! Every volume is pinned to a specific physical host. You should create two or more volumes per application to avoid downtime. Learn more at https://fly.io/docs/volumes/overview/
 
+**?** **Do you still want to use the volumes feature?** Yes
+
+                  ID: vol_vl2g0ky7g8nj8xmr
+
+                Name: outline_data
+
+                 App: outline-server-uk-bbc
+
+              Region: lhr
+
+                Zone: 9a54
+
+             Size GB: 3
+
+           Encrypted: true
+
+          Created at: 30 Jun 25 18:59 UTC
+
+  Snapshot retention: 5
+
+ Scheduled snapshots: true
+ 
 # 👉 第六步：申请公网 IPv4 地址（可选但推荐）
 
 ```bash
 fly ips allocate-v4
 ```
+**Looks like you're accessing a paid feature. Dedicated IPv4 addresses now cost $2/mo.**
+
+**Are you ok with this? Alternatively, you could allocate a shared IPv4 address with the --shared flag.**  No
+
+fly ips allocate-v4 --shared
+
+VERSION IP            TYPE  REGION 
+
+v4     66.241.125.111 shared global
 
 # 👉 第七步：部署实例
 

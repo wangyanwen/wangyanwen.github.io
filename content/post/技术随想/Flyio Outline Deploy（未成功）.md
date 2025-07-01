@@ -1,7 +1,7 @@
 +++
 date = '2025-06-30T13:32:19+02:00'
 draft = true
-title = 'Flyio Outline Deploy'
+title = 'Flyio Outline Deploy（未成功）'
 +++
 
 这是 Fly.io 的官方网站及关于英国伦敦节点的关键信息：

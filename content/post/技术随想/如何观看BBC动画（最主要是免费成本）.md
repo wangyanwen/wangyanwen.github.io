@@ -100,7 +100,7 @@ BBC iPlayer 是 **免费的**，不需要付费会员，但有以下几点需要
 
 ### ✅ 推荐云平台与方案（可用英国节点）
 
-#### 1. **Oracle Cloud Free Tier**
+#### ~~1. **Oracle Cloud Free Tier**~~
 
 - 免费提供：
     
@@ -121,7 +121,7 @@ BBC iPlayer 是 **免费的**，不需要付费会员，但有以下几点需要
 
 ---
 
-#### 2. **Google Cloud Platform（GCP）Free Tier**
+#### ~~2. **Google Cloud Platform（GCP）Free Tier**~~
 
 - 免费提供：
     

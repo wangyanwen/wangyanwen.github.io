@@ -296,10 +296,9 @@ EOF
 
 # 👉 第四步：登录 Fly.io 并初始化项目
 
-```bash
+
 fly auth login
 fly launch --no-deploy  # 不要自动部署，我们还需要设置 volume
-```
 
 弹出提示：
 
@@ -346,11 +345,12 @@ Validating /Users/juan/fly-outline/fly.toml
 
 Your app is ready! Deploy with `flyctl deploy`
 
+
 # 👉 第五步：创建 Volume（持久化 Outline 配置）
 
-```bash
+
 fly volumes create outline_data --region lhr --size 3
-```
+
 Warning! Every volume is pinned to a specific physical host. You should create two or more volumes per application to avoid downtime. Learn more at https://fly.io/docs/volumes/overview/
 
 **?** **Do you still want to use the volumes feature?** Yes
@@ -515,3 +515,75 @@ fly scale count 1
 |节省免费额度（不使用时停机）|使用 `fly scale count 0` 手动停机|
 |保留 Outline 配置 / 密钥|使用 Volume 挂载 `/opt/outline`|
 |防止下次重连失败|保持 IP、配置文件不变 + 使用 Volume|
+
+---
+
+# ✅ Fly.io Outline VPN 本地构建部署包（解决私有镜像问题）
+
+# 👉 第一步：初始化目录
+mkdir fly-outline && cd fly-outline
+
+# 👉 第二步：克隆 Outline Server 官方仓库
+# 可选，GitHub 源码备份：https://github.com/Jigsaw-Code/outline-server
+
+git clone https://github.com/Jigsaw-Code/outline-server.git
+cd outline-server
+
+# 👉 第三步：创建 Dockerfile（简化版本）
+cat <<EOF > Dockerfile
+FROM alpine:3.18
+RUN apk add --no-cache nodejs npm bash
+RUN npm install -g @outline/outline-server
+CMD ["outline-ss-server"]
+EOF
+
+# 👉 第四步：在本地构建镜像
+# 替换为你自己的 Docker Hub 名称
+DOCKER_HUB_USER="yourdockerhubname"
+docker build -t $DOCKER_HUB_USER/outline-server:latest .
+
+# 👉 第五步：登录并上传到 Docker Hub
+# 需要你提前注册 Docker Hub 帐号
+docker login
+
+docker push $DOCKER_HUB_USER/outline-server:latest
+
+# 👉 第六步：准备 Fly.io 项目
+docker logout
+docker context use default
+fly auth login
+fly launch --no-deploy  # 设置应用名，例如 outline-vpn-us
+
+# 👉 第七步：创建 Volume（持久化配置）
+fly volumes create outline_data --region iad --size 3
+
+# 👉 第八步：编辑 fly.toml 文件
+cat <<EOF > fly.toml
+app = "outline-vpn-us"
+primary_region = "iad"
+
+[build]
+  image = "$DOCKER_HUB_USER/outline-server:latest"
+
+[[mounts]]
+  source = "outline_data"
+  destination = "/opt/outline"
+
+[[services]]
+  protocol = "tcp"
+  internal_port = 443
+  ports = [{ port = 443 }]
+EOF
+
+# 👉 第九步：部署
+fly deploy
+
+# 👉 第十步：查看 VPN 访问配置（access.txt）
+fly ssh console
+cat /opt/outline/access.txt
+
+# 👉 可选：节省额度
+fly scale count 0
+
+# 👉 恢复运行
+fly scale count 1

@@ -431,7 +431,7 @@ fly scale count 1
 ### ✅ 会分配，但需要手动添加：
 
 默认情况下，**Fly.io 分配的是一个 `.fly.dev` 的域名**（使用其内部 IPv6 网络），**不会自动分配公网 IPv4 地址**。  
-但你可以 **手动申请一个静态 IPv4 地址（免费）**：
+但你可以 **手动申请一个静态 IPv4 地址（共享的IP免费）**：
 
 ```bash
 fly ips allocate-v4
@@ -589,3 +589,102 @@ fly scale count 0
 
 # 👉 恢复运行
 fly scale count 1
+
+
+非常好 ✅，**版本 B（带 Outline 官方管理工具的全家桶）** 是新手友好、自动生成密钥、可用 Outline Manager 客户端管理的最佳方案。我们现在确保你可以 **完整部署成功**，即使官方镜像拉不下来，我们自己构建。
+
+---
+
+## ✅ 最终部署方案（版本 B，本地构建）
+
+### 📁 目录结构如下：
+
+```
+fly-outline/
+├── Dockerfile
+├── fly.toml
+└── outline/   ← 可选，用于挂载数据卷
+```
+
+---
+
+### 🧱 Dockerfile（本地构建，带 Outline Server 工具）
+
+```Dockerfile
+FROM alpine:3.18
+
+RUN apk add --no-cache nodejs npm bash libsodium
+
+RUN npm install -g @outline/outline-server
+
+CMD ["outline-ss-server"]
+```
+
+---
+
+### 🛠 fly.toml 示例（Fly.io 美国节点，含 Volume）
+
+```toml
+app = "outline-vpn-us-demo"  # ❗换成你自己的唯一 app 名
+
+primary_region = "iad"
+
+[build]
+  dockerfile = "Dockerfile"
+
+[[mounts]]
+  source = "outline_data"
+  destination = "/opt/outline"
+
+[[services]]
+  protocol = "tcp"
+  internal_port = 443
+  ports = [{ port = 443 }]
+  
+[[services]]
+  protocol = "udp"
+  internal_port = 443
+  ports = [{ port = 443 }]
+  
+```
+
+---
+
+### 📦 创建数据卷用于持久化配置
+
+```bash
+fly volumes create outline_data --region iad --size 3
+```
+
+---
+
+### 🚀 一键部署（Fly.io 云端构建）
+
+```bash
+fly deploy --remote-only
+```
+
+---
+
+### 🔑 获取 VPN 配置信息
+
+```bash
+fly ssh console
+cat /opt/outline/access.txt
+```
+
+将输出的 JSON 粘贴进 Outline Manager 客户端，即可开始使用！
+
+---
+
+### ⏸ 节省免费额度（停机时不计时）
+
+```bash
+fly scale count 0
+```
+
+重新开启：
+
+```bash
+fly scale count 1
+```

@@ -38,8 +38,7 @@ title = '西班牙税务身份变更申报表（使用电子证书提交 Modelo 
 
 在页面中找到如下选项：
 
-> **“Presentación electrónica del modelo 030”**  
-> （带钥匙图标🔐表示需电子证书）
+> **“[Modelo 030. Modificación o presentación](https://sede.agenciatributaria.gob.es/static_files/common/html/selector_acceso/SelectorAccesos.html?rep=S&ref=%2Fwlpl%2FBU36-ASIS%2FM030%2Findex.zul&aut=CP)”**  
 
 点击进入后，系统会自动检测你的证书。
 

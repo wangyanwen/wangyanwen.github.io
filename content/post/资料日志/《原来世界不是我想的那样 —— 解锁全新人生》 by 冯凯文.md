@@ -9,6 +9,13 @@ description: "A tool that connects everyday work into one space. It gives you an
 tags:
   - "clippings"
 ---
++++ 
+date = '2025-08-13T21:43:19+02:00' 
+draft = false 
+title = '《原来世界不是我想的那样 —— 解锁全新人生》 by 冯凯文' 
++++ 
+
+
 ![](https://images.unsplash.com/photo-1476897017502-219c9169bd6f?ixlib=rb-4.1.0&q=85&fm=jpg&crop=entropy&cs=srgb&w=4800)
 
 🌏

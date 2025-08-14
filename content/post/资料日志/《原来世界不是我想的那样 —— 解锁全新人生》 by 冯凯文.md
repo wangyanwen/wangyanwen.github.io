@@ -1,20 +1,10 @@
----
-title: "《原来世界不是我想的那样 —— 解锁全新人生》 by 冯凯文"
-source: "https://sincere-numeric-f39.notion.site/by-21586f84b68d81f1be7be977b9a9e958"
-author:
-  - "[[Notion 上的“sincere-numeric-f39”]]"
-published:
-created: 2025-06-27
-description: "A tool that connects everyday work into one space. It gives you and your teams AI tools—search, writing, note-taking—inside an all-in-one, flexible workspace."
-tags:
-  - "clippings"
----
 +++ 
 date = '2025-08-13T21:43:19+02:00' 
 draft = false 
 title = '《原来世界不是我想的那样 —— 解锁全新人生》 by 冯凯文' 
 +++ 
 
+转自--https://sincere-numeric-f39.notion.site/by-21586f84b68d81f1be7be977b9a9e958
 
 ![](https://images.unsplash.com/photo-1476897017502-219c9169bd6f?ixlib=rb-4.1.0&q=85&fm=jpg&crop=entropy&cs=srgb&w=4800)
 

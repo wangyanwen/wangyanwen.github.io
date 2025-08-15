@@ -4,7 +4,8 @@ draft = false
 title = '《原来世界不是我想的那样 —— 解锁全新人生》 by 冯凯文' 
 +++ 
 
-转自[冯凯文](https://sincere-numeric-f39.notion.site/by-21586f84b68d81f1be7be977b9a9e958)
+转自[冯凯文](https://sincere-numeric-f39.notion.site/by-21586f84b68d81f1be7be977b9a9e958)，我在找学习外语资源的时候，竟然在这篇文章里面发现了跟我其他感兴趣方面的交集，**芒格**，然后也很认同博主的学习观点，留存备着。
+
 
 ![](https://images.unsplash.com/photo-1476897017502-219c9169bd6f?ixlib=rb-4.1.0&q=85&fm=jpg&crop=entropy&cs=srgb&w=4800)
 

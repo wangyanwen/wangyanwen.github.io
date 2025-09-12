@@ -8,6 +8,22 @@ title = '西班牙非盈利签证续居留（在线、burjassot更新住家证�
 
 ---
 
+# 省心总结版：
+
+**没换住址 → 可以在线申请新证明**（需电子证书 / Cl@ve）
+
+访问 Burjassot 市政 “Sede Electrónica” 网站。([Burjassot 电子大厅](https://sede.burjassot.org/sta/CarpetaPublic/doEvent?APP_CODE=STA&PAGE_CODE=PTS_HOME))
+
+下拉找到 “Certificaciones y justificantes” 部分，选择 **Certificado de empadronamiento individual**[个人户籍登记证明](https://sede.burjassot.org/sta/CarpetaPrivate/Login?APP_CODE=STA&PAGE_CODE=DATOS_HABITANTE)
+
+用你的电子证书登录（identificarse con certificado digital / firma digital）
+
+填写必要信息（姓名、DNI/NIE 等，可能地址确认等）。确认你当前住址信息是最新的。
+
+待续................
+
+---
+
 ## 🏠 在 Burjassot 更新住址证明（Padrón）的步骤
 
 ### 1. 需要准备的材料
@@ -108,3 +124,107 @@ title = '西班牙非盈利签证续居留（在线、burjassot更新住家证�
 
 ---
 
+在西班牙（包括你说的 Burjassot），**住家证明（Certificado de empadronamiento / Padrón）** 本身不能“自动在线更新”，因为它需要核实你是否仍住在该地址。但有些情况是可以 **在线办理或申请** 的：
+
+---
+
+## 🖥️ 在线相关操作可能性
+
+### 1. **如果住址没有变**
+
+- 你只是需要一份新的 **证明（certificado / volante de empadronamiento）** 来交给移民局、银行、学校等。
+    
+- 这种情况下，很多市政府允许 **在线申请证明**（需有电子证书 Certificado Digital 或 Cl@ve）。
+    
+- Burjassot 的 Ayuntamiento 网站上就有申请渠道，证明可以：
+    
+    - 在线下载 PDF（带电子签章，等同原件），或者
+        
+    - 申请邮寄到家。
+        
+
+### 2. **如果住址发生变化**（搬家）
+
+- 就必须去 **现场更新 padrón 登记**（alta en nuevo domicilio / cambio de domicilio）。
+    
+- 原因是市政府要收住房合同 / 房产证 / 房东授权书等原件，不能全程在线完成。
+    
+- 有些 Ayuntamiento 允许先 **在线预约上传资料**，再现场确认。
+    
+
+### 3. **有效期问题**
+
+- 住家证明通常要求是 **近 3 个月内出具** 的。
+    
+- 所以即使没搬家，你也需要 **重新申请一份最新的 certificado**。
+    
+- 这个通常可以在线完成，不必每次都跑市政府。
+    
+
+---
+
+## 📌 总结
+
+- **没换住址 → 可以在线申请新证明**（需电子证书 / Cl@ve）。
+    
+- **换了住址 → 必须现场更新登记**（携带合同等材料）。
+    
+
+---
+
+要不要我帮你直接找到 **Burjassot 在线申请 padrón 证明的入口**，并教你怎么用 Cl@ve 或 Certificado Digital 下载？
+
+好的，有电子证书的话，你可以按照下面步骤在 Burjassot 的市政电子平台在线申请住家证明（Certificado de empadronamiento）。我把流程 + 网址 +注意事项都列给你。
+
+---
+
+## 🔗 在线入口
+
+- 住家证明申请页 /请求方式 “Solicitud de Certificado de Padrón” — Ayuntamiento de Burjassot 官网上。([burjassot.org](https://www.burjassot.org/tramite/solicitud-de-certificado-de-padron/?utm_source=chatgpt.com "Solicitud de Certificado de Padrón"))
+    
+- Sede Electrónica → “Certificaciones y justificantes” → “Certificado de empadronamiento individual” 等项目，可以即时获得电子证明文件。([Burjassot 电子大厅](https://sede.burjassot.org/sta/CarpetaPublic/doEvent?APP_CODE=STA&PAGE_CODE=PTS_EXPEDOCUMENTS&utm_source=chatgpt.com "Certificaciones y justificantes"))
+    
+
+---
+
+## 🛠 步骤
+
+下面是你已有电子证书（por ejemplo: Certificado Digital 或 sistema Cl@ve）情况下，在线申请住家证明的具体步骤：
+
+| 步骤  | 操作内容                                                                                                                                                                                                                                                                                                                  |
+| --- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1   | 访问 Burjassot 市政 “Sede Electrónica” 网站。([Burjassot 电子大厅](https://sede.burjassot.org/?utm_source=chatgpt.com "Sede electrónica - Ayuntamiento de Burjassot"))                                                                                                                                                           |
+| 2   | 用你的电子证书登录（identificarse con certificado digital / firma digital）。([burjassot.org](https://www.burjassot.org/tramite/solicitud-de-certificado-de-padron/?utm_source=chatgpt.com "Solicitud de Certificado de Padrón"))                                                                                                 |
+| 3   | 在 “Trámites” 或 “Certificaciones y justificantes” 部分，选择 **Certificado de empadronamiento individual** 或者 **Certificado de empadronamiento**。([Burjassot 电子大厅](https://sede.burjassot.org/sta/CarpetaPublic/doEvent?APP_CODE=STA&PAGE_CODE=PTS_EXPEDOCUMENTS&utm_source=chatgpt.com "Certificaciones y justificantes")) |
+| 4   | 填写必要信息（姓名、DNI/NIE 等，可能地址确认等）。确认你当前住址信息是最新的。                                                                                                                                                                                                                                                                           |
+| 5   | 提交申请。在线的话，一般系统会立即生成电子版证明，可以下载 PDF（带电子签名 / sello electrónico）。([Burjassot 电子大厅](https://sede.burjassot.org/sta/CarpetaPublic/doEvent?APP_CODE=STA&PAGE_CODE=PTS_EXPEDOCUMENTS&utm_source=chatgpt.com "Certificaciones y justificantes"))                                                                               |
+| 6   | 如果有费用（tasas），可能需要在线支付。市政页面会提示是否有费用以及数额。([Sede.legal](https://sede.legal/tramites/burjassot/certificado-empadronamiento/?utm_source=chatgpt.com "Solicitar Certificado de Empadronamiento ⚡️ Burjassot"))                                                                                                              |
+
+---
+
+## ⚠ 注意事项
+
+- 确保 **你的电子证书正确安装 / 可以用来验证身份**。如果证书过期或设备不支持，会出错。
+    
+- 住址必须是市政注册时填写的地址。如果你已经换地址但未通知市政，PDF 证明可能显示旧地址。若地址变了，需要先更新 padrón（可能需现场或提交租约等证明）。
+    
+- 在线证书 /证明通常是即时的或几分钟内可下载。([Burjassot 电子大厅](https://sede.burjassot.org/sta/CarpetaPublic/doEvent?APP_CODE=STA&PAGE_CODE=PTS_EXPEDOCUMENTS&utm_source=chatgpt.com "Certificaciones y justificantes"))
+    
+- 有的证明要求近几个月内开出，确保证明的出具日期在你提交续居留申请材料时还算“新鲜”。
+    
+- 如果你有子女，在申请孩子就读证明等材料时，也可能需要孩子的住家证明或孩子也同住的证明。
+    
+
+---
+
+# 省心总结版：
+
+**没换住址 → 可以在线申请新证明**（需电子证书 / Cl@ve）
+
+访问 Burjassot 市政 “Sede Electrónica” 网站。([Burjassot 电子大厅](https://sede.burjassot.org/sta/CarpetaPublic/doEvent?APP_CODE=STA&PAGE_CODE=PTS_HOME))
+
+下拉找到 “Certificaciones y justificantes” 部分，选择 **Certificado de empadronamiento individual**[个人户籍登记证明](https://sede.burjassot.org/sta/CarpetaPrivate/Login?APP_CODE=STA&PAGE_CODE=DATOS_HABITANTE)
+
+用你的电子证书登录（identificarse con certificado digital / firma digital）
+
+填写必要信息（姓名、DNI/NIE 等，可能地址确认等）。确认你当前住址信息是最新的。

@@ -560,3 +560,4 @@ title = 'AppleID从国区切换美区的操作步骤及注意事项'
 
 ---
 
+5. 【重要补充】关于“查找我的 iPhone / Mac”及 iCloud: - 如果仅仅是修改地区(国区 → 美区)，不需要退出“查找我的 iPhone”或 iCloud，数据和设备绑定保持不变。 - 如果打算放弃国区 Apple ID，改用一个全新的美区 Apple ID，则必须先关闭“查找我的 iPhone / Mac / iPad”，并退出 iCloud，否则设备会被激活锁锁住，导致新账号无法正常使用。

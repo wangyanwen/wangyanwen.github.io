@@ -823,3 +823,80 @@ title = 'AppleID从国区切换美区的操作步骤及注意事项'
 
 ---
 
+# Find My iPhone can't turn off
+
+google搜索：
+To turn off "Find My iPhone," first, navigate to Settings > [Your Name] > Find My > Find My iPhone and toggle the switch off. If the option is greyed out or you can't turn it off, you must disable Stolen Device Protection or turn off Screen Time restrictions first, which are located in Settings > Face ID & Passcode and Settings > Screen Time respectively.
+
+对的 ✅ 你找到的这个信息非常关键！  
+苹果在 **iOS 17.3** 开始引入了 **Stolen Device Protection（被盗设备保护）**，如果开启，它会导致「查找我的 iPhone」开关变灰，无法直接关闭。
+
+我帮你把完整流程梳理一下：
+
+---
+
+## 一、为什么会灰掉
+
+1. **Stolen Device Protection（被盗设备保护）已开启**
+    
+    - 这是 iOS 的新功能，为了防止被盗后关闭「查找」绕过激活锁。
+        
+    - 开启后，某些敏感操作（比如关查找）必须输入密码，甚至要 **延时一小时** 才能执行。
+        
+2. **屏幕使用时间限制**
+    
+    - 如果开启了「屏幕使用时间」的隐私限制，也会导致开关灰掉。
+        
+
+---
+
+## 二、解决方法
+
+### 方法 1：关闭「被盗设备保护」
+
+1. 打开 **设置 → Face ID 与密码**（或 Touch ID 与密码）。
+    
+2. 输入解锁密码。
+    
+3. 下滑找到 **被盗设备保护**（Stolen Device Protection）。
+    
+4. 将其关闭。
+    
+5. 回到 **设置 → [你的名字] → 查找 → 查找我的 iPhone**，现在就能点击关闭了。
+    
+
+⚠️ 提示：关闭被盗保护可能需要 **等待一小时冷却时间**（苹果安全机制）。
+
+---
+
+### 方法 2：关闭屏幕使用时间限制
+
+1. 打开 **设置 → 屏幕使用时间 → 内容和隐私访问限制**。
+    
+2. 输入屏幕使用时间密码。
+    
+3. 将限制总开关关闭。
+    
+4. 再回到「查找我的 iPhone」尝试关闭。
+    
+
+---
+
+## 三、如果还是不行
+
+- 确认网络正常（最好用蜂窝网络）。
+    
+- 如果依然灰掉，可能是系统 Bug，可以尝试 **重启手机** 或 **更新 iOS**。
+    
+
+---
+
+✅ 总结：
+
+- 灰色开关 = 很可能是 **被盗设备保护** 导致。
+    
+- 先到 **设置 → Face ID 与密码 → 被盗设备保护** 里关掉，再尝试关闭「查找我的 iPhone」。
+    
+
+---
+

@@ -551,7 +551,7 @@ title = 'AppleID从国区切换美区的操作步骤及注意事项'
     
 4. 如果 iPhone 要验证，可以直接在你事先登录的设备上批准。
     
-
+5. **【重要补充】关于“查找我的 iPhone / Mac”及 iCloud: - 如果仅仅是修改地区(国区 → 美区)，不需要退出“查找我的 iPhone”或 iCloud，数据和设备绑定保持不变。 - 如果打算放弃国区 Apple ID，改用一个全新的美区 Apple ID，则必须先关闭“查找我的 iPhone / Mac / iPad”，并退出 iCloud，否则设备会被激活锁锁住，导致新账号无法正常使用。**
 ---
 
 ✅ 总结：  
@@ -560,7 +560,6 @@ title = 'AppleID从国区切换美区的操作步骤及注意事项'
 
 ---
 
-5. 【重要补充】关于“查找我的 iPhone / Mac”及 iCloud: - 如果仅仅是修改地区(国区 → 美区)，不需要退出“查找我的 iPhone”或 iCloud，数据和设备绑定保持不变。 - 如果打算放弃国区 Apple ID，改用一个全新的美区 Apple ID，则必须先关闭“查找我的 iPhone / Mac / iPad”，并退出 iCloud，否则设备会被激活锁锁住，导致新账号无法正常使用。
 
 # Apple id退出登录，默认会清空哪些数据？
 
@@ -614,7 +613,7 @@ title = 'AppleID从国区切换美区的操作步骤及注意事项'
 # 退出apple id前要先解绑的设备，操作流程
 
 好的 👍 你是要从国区 Apple ID 退出，切换到美区 Apple ID，对吧？  
-在退出前，**必须先解绑设备**，尤其是和“查找我的 iPhone / 激活锁”相关的，否则退出不了，甚至影响后续登录。
+在退出前，**必须先解绑设备**，尤其是和<span style="background:#ff4d4f">“查找我的 iPhone / 激活锁”</span>相关的，否则退出不了，甚至影响后续登录。
 
 我帮你整理一份 **解绑流程清单**：
 
@@ -728,7 +727,7 @@ title = 'AppleID从国区切换美区的操作步骤及注意事项'
 4. 系统会提示输入 Apple ID 密码 → 输入后确认关闭。
     
 
-（确认点：开关变灰，说明已关闭）
+（确认点：开关变灰，不再是绿色，说明已关闭）
 
 ---
 
@@ -823,7 +822,7 @@ title = 'AppleID从国区切换美区的操作步骤及注意事项'
 
 ---
 
-# Find My iPhone can't turn off
+# Find My iPhone can't turn off（查找我的手机）
 
 google搜索：
 To turn off "Find My iPhone," first, navigate to Settings > [Your Name] > Find My > Find My iPhone and toggle the switch off. If the option is greyed out or you can't turn it off, you must disable Stolen Device Protection or turn off Screen Time restrictions first, which are located in Settings > Face ID & Passcode and Settings > Screen Time respectively.

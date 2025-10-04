@@ -10,4 +10,4 @@
 
 ---
 **第三个**  
-- [ ] 搭建免费Oracle Cloud节点，仔可以看BBC动画。  
+- [x] 搭建免费Oracle Cloud节点，仔可以看BBC动画。（测试完，无法注册免费Oracle节点）

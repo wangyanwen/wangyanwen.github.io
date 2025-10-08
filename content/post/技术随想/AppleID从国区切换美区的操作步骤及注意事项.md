@@ -899,3 +899,6 @@ To turn off "Find My iPhone," first, navigate to Settings > [Your Name] > Find M
 
 ---
 
+## 备忘录notes的数据的方便备份方法：
+
+因为退出AppleID，备忘录notes的数据会清空，但是通过其他方法备份也不太方便，比如只能txt，格式没法保存跟原来一样。实际操作得出的好方法，可以在原ID备忘录里通过分享----》Airdrop找到新ID手机，接受后就会保存跟原来一样了。

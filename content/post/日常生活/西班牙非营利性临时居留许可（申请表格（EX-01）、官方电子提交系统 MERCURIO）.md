@@ -1,18 +1,18 @@
 +++
 date = '2025-10-09T14:53:46+02:00'
 draft = false
-title = '西班牙非营利性临时居留许可（申请表格（EX-01）、官方电子提交系统 MERCURIO）'
+title = '西班牙非营利性临时许可（申请表格（EX-01）、官方电子提交系统 MERCURIO）'
 +++
 
 非常好 👍  
 你上传的两份文件分别是：
 
-1️⃣ **《01-Formulario_residencia_no_lucrativa.pdf》** —— 西班牙非盈利居留（EX-01）申请表格；  
+1️⃣ **《01-Formulario_residencia_no_lucrativa.pdf》** —— 西班牙非营利性临时居留（EX-01）申请表格；  
 2️⃣ **《填报用户手册 EXT_MERCURION_USU_V5.pdf》** —— 官方电子提交系统 _MERCURIO_ 的使用手册。
 
 下面是结合这两份文件整理出的
 
-# 📘《EX-01 非盈利居留 / 续居留 填报指南（含Mercurio线上提交说明）》
+# 📘《EX-01 非营利性临时居留 / 续居留 填报指南（含Mercurio线上提交说明）》
 
 ---
 
@@ -20,7 +20,7 @@ title = '西班牙非营利性临时居留许可（申请表格（EX-01）、官
 
 **EX-01 表格** 适用于：
 
-- 非盈利居留初次申请（residencia temporal no lucrativa – inicial）
+- 非营利性临时居留初次申请（residencia temporal no lucrativa – inicial）
     
 - 续居留（primera / segunda renovación）
     
@@ -40,22 +40,22 @@ title = '西班牙非营利性临时居留许可（申请表格（EX-01）、官
 
 ### 🟩 第1部分：DATOS DEL EXTRANJERO/A（申请人信息）
 
-|项|内容|示例|
-|---|---|---|
-|**PASAPORTE / NIE**|护照号（首次申请）或居留卡号 NIE（续签）|EJ123456|
-|**1er / 2º Apellido**|姓（如无第二姓留空）|WANG / —|
-|**Nombre**|名|YANWEN|
-|**Sexo**|选“H”（男）或“M”（女）||
-|**Fecha de nacimiento**|出生日期（dd/mm/aaaa）|08/05/1985|
-|**Lugar / País**|出生城市 + 国家|Beijing, China|
-|**Nacionalidad**|国籍|China|
-|**Estado civil**|婚姻状况（S/C/V/D/Sp = 单身/已婚/丧偶/离婚/分居）||
-|**Nombre del padre / madre**|父母姓名（常规填）||
-|**Domicilio en España**|在西班牙住址（街道+门牌+楼层）||
-|**Localidad / C.P. / Provincia**|城市 / 邮编 / 省份|Burjassot / 46100 / Valencia|
-|**Teléfono / E-mail**|联系方式||
-|**Representante legal**|若有代理（如律师），填代理人姓名及证件号。||
-|**Hijas/os a cargo en edad de escolarización**|如有在读子女，勾 “SÍ”；无则勾 “NO”。||
+| 项                                              | 内容                                | 示例                           |
+| ---------------------------------------------- | --------------------------------- | ---------------------------- |
+| **PASAPORTE / NIE**                            | 护照号（首次申请）或居留卡号 NIE（续签）            | EJ123456                     |
+| **1er / 2º Apellido**                          | 姓（如无第二姓留空）                        | WANG / —                     |
+| **Nombre**                                     | 名                                 | JUANJUAN                       |
+| **Sexo**                                       | 选“H”（男）或“M”（女）                    |                              |
+| **Fecha de nacimiento**                        | 出生日期（dd/mm/aaaa）                  | 08/05/1985                   |
+| **Lugar / País**                               | 出生城市 + 国家                         | Beijing, China               |
+| **Nacionalidad**                               | 国籍                                | China                        |
+| **Estado civil**                               | 婚姻状况（S/C/V/D/Sp = 单身/已婚/丧偶/离婚/分居） |                              |
+| **Nombre del padre / madre**                   | 父母姓名（常规填）                         |                              |
+| **Domicilio en España**                        | 在西班牙住址（街道+门牌+楼层）                  |                              |
+| **Localidad / C.P. / Provincia**               | 城市 / 邮编 / 省份                      | Burjassot / 46100 / Valencia |
+| **Teléfono / E-mail**                          | 联系方式                              |                              |
+| **Representante legal**                        | 若有代理（如律师），填代理人姓名及证件号。             |                              |
+| **Hijas/os a cargo en edad de escolarización** | 如有在读子女，勾 “SÍ”；无则勾 “NO”。           |                              |
 
 ---
 
@@ -81,7 +81,7 @@ title = '西班牙非营利性临时居留许可（申请表格（EX-01）、官
 
 |场景|选择项|
 |---|---|
-|初次申请非盈利居留|☑ INICIAL|
+|初次申请非营利性临时居留|☑ INICIAL|
 |首次续居留|☑ 1ª RENOVACIÓN → 勾选 “Titular de autorización de residencia no lucrativa previa inicial/renovada”|
 |第二次续居留|☑ 2ª RENOVACIÓN → 勾选 “Titular de autorización de residencia no lucrativa previa inicial/renovada”|
 |子女居留续签|☑ RENOVACIÓN MENORES|
@@ -196,13 +196,13 @@ title = '西班牙非营利性临时居留许可（申请表格（EX-01）、官
 ---
 
 是否需要我帮你做一份  
-📋「EX-01 非盈利续居留（Valencia 版）」中文示范填写样本（带中西对照）？  
+📋「EX-01 非营利性临时续居留（Valencia 版）」中文示范填写样本（带中西对照）？  
 可以直接照着填。
 
 好的 👍  
-我会为你制作一份 **《EX-01 非盈利续居留表（Valencia 版）》中文+西班牙语对照填写样本**，专门适用于你这种情况：
+我会为你制作一份 **《EX-01 非营利性临时续居留表（Valencia 版）》中文+西班牙语对照填写样本**，专门适用于你这种情况：
 
-> ✅ 已在西班牙持有非盈利居留  
+> ✅ 已在西班牙持有非营利性临时居留  
 > ✅ 现在办理 **第一次或第二次续居留（renovación）**  
 > ✅ 居住地：Burjassot（Valencia）  
 > ✅ 有家庭成员（配偶、孩子）
@@ -219,26 +219,26 @@ title = '西班牙非营利性临时居留许可（申请表格（EX-01）、官
 
 ### 🟩 1️⃣ DATOS DEL EXTRANJERO/A（申请人信息）
 
-|项目|西班牙语原文|示例 / 中文说明|
-|---|---|---|
-|**PASAPORTE / NIE**|Pasaporte / NIE|E12345678（护照号） / Y1234567X（居留卡号）|
-|**1er Apellido**|Primer apellido|Wang|
-|**2º Apellido**|Segundo apellido|（无则留空）|
-|**Nombre**|Nombre|Yanwen|
-|**Sexo**|Sexo (H/M)|M（女性）|
-|**Fecha de nacimiento**|dd/mm/aaaa|12/08/1985|
-|**Lugar**|Lugar de nacimiento|Beijing|
-|**País**|País de nacimiento|China|
-|**Nacionalidad**|Nacionalidad|China|
-|**Estado civil**|S / C / V / D / Sp|C（已婚）|
-|**Nombre del padre**|Nombre del padre|Wang XX|
-|**Nombre de la madre**|Nombre de la madre|Li XX|
-|**Domicilio en España**|Calle / Nº / Piso|Av. Pi i Margall 45, 2ºA|
-|**Localidad / C.P. / Provincia**|Localidad / Código postal / Provincia|Burjassot / 46100 / Valencia|
-|**Teléfono móvil**|Teléfono móvil|612345678|
-|**E-mail**|E-mail|[yanwen@example.com](mailto:yanwen@example.com)|
-|**Representante legal**|（如自办留空）|—|
-|**¿Hijos a cargo en edad escolar?**|Sí / No|Sí（如有在学子女）|
+| 项目                                  | 西班牙语原文                                | 示例 / 中文说明                                           |
+| ----------------------------------- | ------------------------------------- | --------------------------------------------------- |
+| **PASAPORTE / NIE**                 | Pasaporte / NIE                       | E12345678（护照号） / Y1234567X（居留卡号）                    |
+| **1er Apellido**                    | Primer apellido                       | Wang                                                |
+| **2º Apellido**                     | Segundo apellido                      | （无则留空）                                              |
+| **Nombre**                          | Nombre                                | JUANJUAN                                            |
+| **Sexo**                            | Sexo (H/M)                            | H（男性）                                               |
+| **Fecha de nacimiento**             | dd/mm/aaaa                            | 12/08/1985                                          |
+| **Lugar**                           | Lugar de nacimiento                   | Beijing                                             |
+| **País**                            | País de nacimiento                    | China                                               |
+| **Nacionalidad**                    | Nacionalidad                          | China                                               |
+| **Estado civil**                    | S / C / V / D / Sp                    | C（已婚）                                               |
+| **Nombre del padre**                | Nombre del padre                      | Wang XX                                             |
+| **Nombre de la madre**              | Nombre de la madre                    | Li XX                                               |
+| **Domicilio en España**             | Calle / Nº / Piso                     | Av. Pi i Margall 45, 2ºA                            |
+| **Localidad / C.P. / Provincia**    | Localidad / Código postal / Provincia | Burjassot / 46100 / Valencia                        |
+| **Teléfono móvil**                  | Teléfono móvil                        | 612345678                                           |
+| **E-mail**                          | E-mail                                | [JUANJUAN@example.com](mailto:JUANJUAN@example.com) |
+| **Representante legal**             | （如自办留空）                               | —                                                   |
+| **¿Hijos a cargo en edad escolar?** | Sí / No                               | Sí（如有在学子女）                                          |
 
 ---
 

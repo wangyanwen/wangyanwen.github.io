@@ -219,26 +219,26 @@ title = '西班牙非营利性临时许可（申请表格（EX-01）、官方电
 
 ### 🟩 1️⃣ DATOS DEL EXTRANJERO/A（申请人信息）
 
-| 项目                                  | 西班牙语原文                                | 示例 / 中文说明                                           |
-| ----------------------------------- | ------------------------------------- | --------------------------------------------------- |
-| **PASAPORTE / NIE**                 | Pasaporte / NIE                       | E12345678（护照号） / Y1234567X（居留卡号）                    |
-| **1er Apellido**                    | Primer apellido                       | Wang                                                |
-| **2º Apellido**                     | Segundo apellido                      | （无则留空）                                              |
-| **Nombre**                          | Nombre                                | JUANJUAN                                            |
-| **Sexo**                            | Sexo (H/M)                            | H（男性）                                               |
-| **Fecha de nacimiento**             | dd/mm/aaaa                            | 12/08/1985                                          |
-| **Lugar**                           | Lugar de nacimiento                   | Beijing                                             |
-| **País**                            | País de nacimiento                    | China                                               |
-| **Nacionalidad**                    | Nacionalidad                          | China                                               |
-| **Estado civil**                    | S / C / V / D / Sp                    | C（已婚）                                               |
-| **Nombre del padre**                | Nombre del padre                      | Wang XX                                             |
-| **Nombre de la madre**              | Nombre de la madre                    | Li XX                                               |
-| **Domicilio en España**             | Calle / Nº / Piso                     | Av. Pi i Margall 45, 2ºA                            |
-| **Localidad / C.P. / Provincia**    | Localidad / Código postal / Provincia | Burjassot / 46100 / Valencia                        |
-| **Teléfono móvil**                  | Teléfono móvil                        | 612345678                                           |
-| **E-mail**                          | E-mail                                | [JUANJUAN@example.com](mailto:JUANJUAN@example.com) |
-| **Representante legal**             | （如自办留空）                               | —                                                   |
-| **¿Hijos a cargo en edad escolar?** | Sí / No                               | Sí（如有在学子女）                                          |
+| 项目                                  | 西班牙语原文                                 | 示例 / 中文说明                                           |
+| ----------------------------------- | -------------------------------------- | --------------------------------------------------- |
+| **PASAPORTE / NIE**                 | Pasaporte / NIE                        | E12345678（护照号） / Y1234567X（居留卡号）                    |
+| **1er Apellido**                    | Primer apellido                        | Wang                                                |
+| **2º Apellido**                     | Segundo apellido                       | （无则留空）                                              |
+| **Nombre**                          | Nombre                                 | JUANJUAN                                            |
+| **Sexo**                            | Sexo (H/M)                             | H（男性）                                               |
+| **Fecha de nacimiento**             | dd/mm/aaaa                             | 12/08/1985                                          |
+| **Lugar**                           | Lugar de nacimiento                    | Beijing                                             |
+| **País**                            | País de nacimiento                     | China                                               |
+| **Nacionalidad**                    | Nacionalidad                           | China                                               |
+| **Estado civil**                    | S / C / V / D / Sp                     | C（已婚）                                               |
+| **Nombre del padre**                | Nombre del padre                       | Wang XX                                             |
+| **Nombre de la madre**              | Nombre de la madre                     | Li XX                                               |
+| **Domicilio en España**             | Calle（街道地址） / Nº（门牌号） / Piso（楼层、门号或房间） | Av. Pi i Margall 45, 2ºA                            |
+| **Localidad / C.P. / Provincia**    | Localidad / Código postal / Provincia  | Burjassot / 46100 / Valencia                        |
+| **Teléfono móvil**                  | Teléfono móvil                         | 612345678                                           |
+| **E-mail**                          | E-mail                                 | [JUANJUAN@example.com](mailto:JUANJUAN@example.com) |
+| **Representante legal**             | （如自办留空）                                | —                                                   |
+| **¿Hijos a cargo en edad escolar?** | Sí / No                                | Sí（如有在学子女）                                          |
 
 ---
 
@@ -449,7 +449,7 @@ title = '西班牙非营利性临时许可（申请表格（EX-01）、官方电
 
 ## 继续追问：姓名格式是名在前还是姓在前，中间用空格连接
 
-## 回答：
+## gpt回答：
 
 非常好，这个细节在西班牙行政系统里确实很关键 ✅
 
@@ -495,4 +495,3 @@ title = '西班牙非营利性临时许可（申请表格（EX-01）、官方电
 > 👉 `[WANG JUANJUAN, NIE Y1234567X]`
 
 ---
-

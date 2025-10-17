@@ -296,15 +296,15 @@ title = '西班牙非营利性临时许可（申请表格（EX-01）、官方电
 
 ## 📎 附件清单（需一并提交）
 
-|类别|文件|
-|---|---|
-|🪪 身份证明|护照 + TIE（原件扫描）|
-|🏠 住址证明|Certificado de empadronamiento colectivo（含全家）|
-|💰 财力证明|银行对账单近6–12个月（显示资金 ≥ 30,000€ + 每家庭成员7,500€）|
-|🩺 医疗保险|Seguro médico privado sin copago（覆盖1年）|
-|👨‍👩‍👧 子女材料|Certificado de escolarización（学校就读证明）|
-|💶 缴费凭证|Modelo 790 código 052（费用约16–21欧）|
-|🧾 其他|上次居留卡复印件、结婚证/出生证（如需要）|
+| 类别            | 文件                                            |
+| ------------- | --------------------------------------------- |
+| 🪪 身份证明       | 护照 + TIE（原件扫描）                                |
+| 🏠 住址证明       | Certificado de empadronamiento colectivo（含全家） |
+| 💰 财力证明       | 银行对账单近6–12个月（显示资金 ≥ 30,000€ + 每家庭成员7,500€）    |
+| 🩺 医疗保险       | Seguro médico privado sin copago（覆盖1年）        |
+| 👨‍👩‍👧 子女材料 | Certificado de escolarización（学校就读证明）         |
+| 💶 缴费凭证       | Modelo 790 código 052（费用约16–21欧）              |
+| 🧾 其他         | 上次居留卡复印件、结婚证/出生证（如需要）                         |
 
 ---
 
@@ -434,6 +434,77 @@ title = '西班牙非营利性临时许可（申请表格（EX-01）、官方电
 
 这样外管局审核时会自动将三份档案视为家庭续签组合处理。
 
+### 01表格没找到前面说到的备注栏，备注留言如何处理？
+
+非常好的细节问题 👏  
+你说得对 —— **EX-01 表格（PDF 本身）确实没有专门的“备注 / observaciones”栏**。  
+但我们前面提到的“备注说明（observaciones）”并不是填写在 EX-01 表内，而是在你**通过 MERCURIO 平台提交时**输入的。  
+我来帮你完整讲清楚 👇
+
+---
+
+## 🧾 一、EX-01 表格里没有备注栏
+
+EX-01 是固定模板（官方 PDF），它只包括以下主要部分：  
+1️⃣ 申请人信息  
+2️⃣ 代理人信息  
+3️⃣ 通知地址  
+4️⃣ 申请类型  
+✔ 最后是签名和“dirigida a”收件机关
+
+➡️ 所以在 **EX-01 文件本身中**，你不需要、也不能手写备注。
+
+---
+
+## 💻 二、在 **MERCURIO 平台提交时** 才有备注输入框
+
+当你在网站：  
+🔗 [https://sede.administracionespublicas.gob.es](https://sede.administracionespublicas.gob.es)  
+进入 “**Mercurio – Solicitudes Telemáticas de Extranjería**”  
+选择 “Renovación residencia no lucrativa” 时，  
+在上传完所有文件、即将“签署并发送（Firmar y presentar）”之前，  
+系统会出现一个可编辑的文本框，标题通常是：
+
+> **Observaciones / Comentarios adicionales / Información adicional**
+
+这就是可以写**备注留言**的地方 ✅
+
+---
+
+## ✍️ 三、可在此处输入的典型内容（尤其是家庭续签）-仅供参考，可对照翻译修改成符合自己的情况说明
+
+建议写明这是家庭同时递交的申请，便于外管局关联三份档案。  
+例如：
+
+> **Observaciones:**  
+> Esta solicitud se presenta junto con la renovación de residencia no lucrativa de su cónyuge **LI MEILING (NIE Y9876543Z)** y su hijo **WANG XIAOHAO (NIE Y7654321Q)**.  
+> Todos los miembros de la familia residen en la misma dirección y se adjunta la documentación económica de forma conjunta.
+
+（中文意思：  
+此申请与配偶李美玲（NIE Y9876543Z）及子女王小豪（NIE Y7654321Q）的非营利居留续签一并提交。
+
+所有家庭成员均居住在同一地址，并附上共同的经济证明文件。）
+
+---
+
+## 📎 四、如果你是用主申请人证书代为提交配偶/孩子的材料
+
+也可以在每份备注中写明代提交的关系，例如：
+
+> Presentada por su cónyuge **WANG JUANJUAN** mediante certificado digital como representante familiar.
+
+（由其配偶王卷卷使用电子证书作为家庭代表提交。）
+
+---
+
+## ✅ 五、总结要点
+
+|项目|填写位置|内容|
+|---|---|---|
+|“备注 / Observaciones”|❌ 不在 EX-01 表中||
+|在 MERCURIO 平台提交时|✅ 页面底部文本框|写说明或家庭关联信息|
+|作用|帮助外管局识别家庭组申请、解释特殊情况||
+
 ---
 
 ✅ **结论简要：**
@@ -495,3 +566,173 @@ title = '西班牙非营利性临时许可（申请表格（EX-01）、官方电
 > 👉 `[WANG JUANJUAN, NIE Y1234567X]`
 
 ---
+
+## 提问：01表第3部分Nombre y apellidos del titular要填吗，是说房屋主人？我是租房
+
+## gpt回答：
+
+非常好的问题 👏，你问到的是很多人第一次填 **EX-01 表格** 时最容易疑惑的地方之一。
+
+我们来详细解释一下你提到的部分：
+
+---
+
+## 🧾 EX-01 表格第 3 部分
+
+标题是：
+
+> **DOMICILIO A EFECTOS DE NOTIFICACIONES**  
+> （通知用地址）
+
+里面有一行：
+
+> **Nombre y apellidos del titular del domicilio**  
+> （住所持有人姓名）
+
+---
+
+### 🟩 ✅ 含义解释：
+
+这个 **“titular del domicilio”** 并不是指房产的法律所有人（房东），  
+而是指 **该住址的主要使用人或租住人，也就是你自己**。
+
+---
+
+### 🧩 官方说明（内政部指引）
+
+> Se debe indicar el nombre del titular del domicilio a efectos de notificaciones,  
+> que puede ser el propio solicitante o la persona autorizada para recibir notificaciones.
+
+意思是：
+
+> “应填写用于接收通知的住址持有人姓名，可以是申请人本人，也可以是代收人。”
+
+---
+
+### ✅ 如果你是租房：
+
+- 你就是该地址的合法居住者（empadronado）。
+    
+- 因此这里应填写 **你自己的姓名**（与前面申请人姓名一致）。
+    
+
+📍例如：
+
+> Nombre y apellidos del titular: **WANG YANWEN**
+
+---
+
+### ⚠️ 什么时候不是本人？
+
+仅在以下情况才写别人：
+
+- 你希望所有政府通知寄给代理律师、gestor。
+    
+- 或者使用他人的地址作为通知地址（极少见）。
+    
+
+那时才填那个人的名字。
+
+---
+
+### 🧾 你现在的情况（租房 + 自己收信）：
+
+✅ 填：
+
+> **Nombre y apellidos del titular:** WANG YANWEN  
+> **Domicilio a efectos de notificaciones:** 同上（和第1部分住址相同）
+
+---
+
+**总结：**
+
+> - “Nombre y apellidos del titular” ≠ 房屋主人
+>     
+> - ✅ 应填你自己（申请人）
+>     
+> - 只有使用他人地址收信或律师代理时才写别人
+>     
+
+---
+
+## 提问：01表第3部分dehu平台，儿童是不是就不用勾选了，因为没有注册
+
+## gpt回答：
+
+非常棒的问题 👏，你完全抓住了一个**MERCURIO 电子续签中最容易忽略的细节**。
+
+我们来具体看：
+
+---
+
+## 📄 EX-01 表第 3 部分：
+
+**DOMICILIO A EFECTOS DE NOTIFICACIONES**（通知用地址）  
+其中有一行选项：
+
+> ☑ **CONSIENTO que las comunicaciones y notificaciones se realicen mediante puesta a disposición en la Dirección Electrónica Habilitada Única (DEHú)**  
+> （我同意通过统一电子通知平台 DEHú 接收所有通知）
+
+---
+
+## 🧩 DEHú 是什么？
+
+DEHú = **Dirección Electrónica Habilitada Única**  
+👉 西班牙政府的官方电子通知系统，  
+所有注册用户（个人或企业）可以在 [https://dehu.redsara.es](https://dehu.redsara.es) 上接收行政通知（例如移民局决议）。
+
+要使用 DEHú，必须：
+
+- 拥有 **电子证书（Certificado digital）** 或
+    
+- **Cl@ve Permanente / PIN 账户**
+    
+
+---
+
+## 👶 对于儿童申请人（未成年人）
+
+- **未成年人没有 DEHú 帐号，也无法注册**（系统要求成年身份认证）。
+    
+- 所以在孩子的 EX-01 表格中：
+    
+    > ❌ **不要勾选这一项。**
+    
+
+因为：
+
+- 系统不会向孩子的名义发通知；
+    
+- 外管局的通知默认会发送给父母（代表人）。
+    
+
+---
+
+## 👨‍👩‍👧 推荐做法（家庭申请场景）
+
+|申请人|是否勾选 DEHú|备注|
+|---|---|---|
+|主申请人（父/母）|✅ 勾选|通知将发到 DEHú（主申请人账户）|
+|配偶|✅ 勾选|可独立查看或同主申请人代查|
+|子女|❌ 不勾选|无 DEHú 账户，通知会通过父母的 DEHú 或电子信箱接收|
+
+---
+
+## ⚠️ 额外提示
+
+- 若你用 **同一电子证书（主申请人）代为提交全家的 MERCURIO 申请**，  
+    所有电子通知（resguardo、requerimiento、resolución）都会出现在 **主申请人 DEHú 帐号** 下。
+    
+- 外管局会自动识别家庭关联，无需每个成员都勾选。
+    
+
+---
+
+✅ **结论**
+
+> 👶 儿童申请（未成年人）不勾选 DEHú；  
+> 👩‍🦰 主申请人和配偶勾选即可；  
+> 📨 所有通知都会集中发送到主申请人的 DEHú。
+
+---
+

@@ -126,49 +126,49 @@ title = '西班牙非营利性临时许可（申请表格（EX-01）、官方电
 
 ---
 
-### 💻 2. 线上递交（通过 MERCURIO 平台）
+### 💻 2. 线上递交（通过 MERCURIO 平台）-- <u>建议用GoogleChrome浏览器，因为用Firefox显示会有点问题</u>
 
 根据《填报用户手册 EXT_MERCURION_USU_V5.pdf》步骤：
 
 #### ✅ 准备
 
-- 安装 **AutoFirma**（电子签名程序）
+- 安装 [**AutoFirma**](https://firmaelectronica.gob.es/ciudadanos/descargas)(电子签名程序）---- **非常重要，后面提交的时候需要给文件签名**
     
-- 准备 PDF 扫描件（≤6MB）
+- 准备 PDF 扫描件（≤6MB）----  **护照扫描件需要做压缩处理**
     
-- 浏览器已导入电子证书
+- 浏览器已导入电子证书  ----  **这肯定是前提了，要不怎么在线办理呢**
     
 
 #### 🪄 步骤
 
-1. 登录 👉 [https://sede.administracionespublicas.gob.es](https://sede.administracionespublicas.gob.es)  
-    → **Procedimientos → Extranjería → Mercurio – Solicitudes de Autorizaciones de Extranjería**
+1. 登录 👉 [Sede Electrónica del Ministerio de Política Territorial y Memoria Democrática](https://mptmd.sede.gob.es/)  
+    → **Procedimientos → Extranjería → MERCURIO → Acceder a Solicitudes Telemáticas de Autorizaciones de Extranjería**
     
-2. 选择 **CONTINUAR INDIVIDUAL**
+2. 选择 **Autorizaciones de Extranjería（Continuar）  → Modos de acceso（CONTINUAR INDIVIDUAL）**
     
-3. 选择省份 **Valencia**
+3. 系统进入 CL@VE 验证
     
-4. 系统进入 CL@VE 验证
+4. “Opciones disponibles”（Continuar presentación） → 弹出窗口“Opciones”选择“Presentar nueva solicitud”省份 **Valencia**
     
-5. 进入后点击 “Crear nueva solicitud”
+5. “Modelos de solicitud”（Continuar）
     
-6. 选择表格 **EX-01 – Residencia no lucrativa**
+6. 选择表格 **EX-01 – Residencia no lucrativa**  选择“RENOVACIÓN”下面“Titular de los medios económicos.”（这是主申请人的选项，银行出具的那张经济能力证明的帐户人）
     
 7. 填写与纸质表相同内容
     
 8. 在“Anexos”部分上传以下文件：
     
-    - 护照扫描件
+    - 护照扫描件（预先压缩好，大小不要超过6M）
         
-    - TIE 卡
+    - TIE 卡 （实操中发现没有这项，gpt说可以放在其他文件项下，标注TIE）
         
     - 财力证明（银行流水）
         
     - 医疗保险
         
-    - Empadronamiento（住家证明）
+    - Empadronamiento（住家证明）（实操中上传在其他文件项下）
         
-    - 子女 escolarización 证明（如有）
+    - 子女就读证明（如有小孩）
         
 9. 点击 **“Concluir”** → 同意 RGPD → 系统生成 PDF
     
@@ -424,6 +424,11 @@ title = '西班牙非营利性临时许可（申请表格（EX-01）、官方电
 |Alicante / Castellón|同上|提交时附家庭关系文件（Libro de familia / matrimonio）|
 
 ---
+
+**您可以通过“外国人档案处理状态信息”应用程序查询档案状态。**
+
+Puede consultar el estado del expediente a traves de la aplicación **[Información sobre el estado de tramitación de los expedientes de extranjería](https://sede.administracionespublicas.gob.es/infoext2/)**
+
 
 ### 💡 额外技巧
 

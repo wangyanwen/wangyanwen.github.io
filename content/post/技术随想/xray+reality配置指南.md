@@ -4,14 +4,16 @@ draft = false
 title = 'xray+reality配置指南'
 +++
 
-结合官方给的小白学习文档(https://xtls.github.io/document/level-0/ch05-webpage.html / https://xtls.github.io/document/level-0/ch06-certificates.html / https://xtls.github.io/document/level-0/ch07-xray-server.html / https://xtls.github.io/document/level-0/ch08-xray-clients.html)，将优化、安全的内容加入每步操作指南，标注容易出错的地方，重点需关注内容，出个**部署xray+reality全面指南**（附录多用户如何配置，修改哪部分）：
+## 最终采用方案：官方默认推荐，无域名无证书。如果想了解学习相关配置教程，“知其然，而知其所以然”，直到最后为何不再需要申请TLS证书了。
+
+结合官方给的小小白学习文档(https://xtls.github.io/document/level-0/ch05-webpage.html / https://xtls.github.io/document/level-0/ch06-certificates.html / https://xtls.github.io/document/level-0/ch07-xray-server.html / https://xtls.github.io/document/level-0/ch08-xray-clients.html)，将优化、安全的内容加入每步操作指南，标注容易出错的地方，重点需关注内容，出个**部署xray+reality全面指南**（附录多用户如何配置，修改哪部分）：
 
 ## GPT:
 
 以下是一个基于官方“小小白白话文”系列（第5~8章）内容整合、并加入实战优化与安全提示的 **「Xray + Reality 一键部署与多用户配置全面指南（Markdown版）」**。  
 适用于：**Debian 12/13 VPS，自有域名，已安装 Nginx。**
 
-好的，下面我为你梳理一个**“从零到一”全面部署 Xray‑core + Realty （Reality）方式，使用自有域名、伪装网站、安全优化、多用户支持**的操作指南。全程用“小白白话文”说明，并在每一步标注 **容易出错的地方／重点关注项**。你可以按顺序操作或保存为文档备用。
+好的，下面我为你梳理一个**“从零到一”全面部署 Xray‑core + Realty （Reality）方式，使用自有域名、伪装网站、安全优化、多用户支持**的操作指南。全程用“小小白白话文”说明，并在每一步标注 **容易出错的地方／重点关注项**。你可以按顺序操作或保存为文档备用。
 
 ---
 

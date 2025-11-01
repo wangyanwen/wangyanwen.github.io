@@ -1950,7 +1950,7 @@ REALITY 的设计原理就是通过伪装成一个**高信誉、真实的外部 
 
 |项目|方案 A：偷别人（decoy 模式）|方案 B：偷自己（self-impersonation 模式）|
 |---|---|---|
-|TLS 伪装目标 (`dest` / `serverNames`)|外部高信誉网站（如 `www.apple.com:443`）|自己域名（如 `juan-cool.com:443`）|
+|TLS 伪装目标 (`dest` / `serverNames`)|外部高信誉网站（如 `www.apple.com:443`）|自己域名（如 `example.com:443`）|
 |证书来源|从目标站模拟握手，**不需要**本地证书|你自己签发的 Let's Encrypt 或 acme.sh 证书|
 |Xray 监听|直接 443 端口|同样 443 端口|
 |Nginx 用途|仅 fallback 伪装网页|可做 HTTPS 静态网页并被 REALITY 窃取握手信息|
@@ -1963,15 +1963,15 @@ REALITY 的设计原理就是通过伪装成一个**高信誉、真实的外部 
 
 ## ⚙️ 二、方案 B 的实现机制
 
-1. **你拥有自己的域名** （例如 `juan-cool.com`）。
+1. **你拥有自己的域名** （例如 `example.com`）。
     
 2. **Nginx** 使用 Let's Encrypt 证书监听一个 HTTPS 端口（可为 `127.0.0.1:8443`）。
     
-3. **Xray** 的 `realitySettings.dest` 设为 `127.0.0.1:8443`，`serverNames` 为 `juan-cool.com`。
+3. **Xray** 的 `realitySettings.dest` 设为 `127.0.0.1:8443`，`serverNames` 为 `example.com`。
     
     - 这样 Xray 在启动时会从你本地 Nginx 的 Server Hello “偷取”握手特征。
         
-4. 客户端连接 443 端口时，Xray 向客户端表现得好像自己是 `juan-cool.com` 的 HTTPS 服务器。
+4. 客户端连接 443 端口时，Xray 向客户端表现得好像自己是 `example.com` 的 HTTPS 服务器。
     
 5. 普通浏览器访问 443 时，则会通过 fallback 转交 Nginx 的 静态网页，实现“看起来是你自己的网站”。
     
@@ -1980,13 +1980,13 @@ REALITY 的设计原理就是通过伪装成一个**高信誉、真实的外部 
 
 ## 🔐 三、证书管理与 Nginx 配置思路
 
-1. 使用 `acme.sh` 或 `certbot` 签发 `juan-cool.com` 证书。
+1. 使用 `acme.sh` 或 `certbot` 签发 `example.com` 证书。
     
     ```bash
-    sudo mkdir -p /etc/ssl/juan-cool.com
-    sudo acme.sh --install-cert -d juan-cool.com \
-      --key-file       /etc/ssl/juan-cool.com/juan-cool.com.key \
-      --fullchain-file /etc/ssl/juan-cool.com/fullchain.cer \
+    sudo mkdir -p /etc/ssl/example.com
+    sudo acme.sh --install-cert -d example.com \
+      --key-file       /etc/ssl/example.com/example.com.key \
+      --fullchain-file /etc/ssl/example.com/fullchain.cer \
       --reloadcmd "systemctl reload nginx"
     ```
     
@@ -1995,13 +1995,13 @@ REALITY 的设计原理就是通过伪装成一个**高信誉、真实的外部 
     ```nginx
     server {
         listen 127.0.0.1:8443 ssl http2;
-        server_name juan-cool.com;
+        server_name example.com;
     
-        ssl_certificate     /etc/ssl/juan-cool.com/fullchain.cer;
-        ssl_certificate_key /etc/ssl/juan-cool.com/juan-cool.com.key;
+        ssl_certificate     /etc/ssl/example.com/fullchain.cer;
+        ssl_certificate_key /etc/ssl/example.com/example.com.key;
         ssl_protocols       TLSv1.3;
     
-        root /var/www/juan-cool.com;
+        root /var/www/example.com;
         index index.html;
     
         access_log off;
@@ -2015,7 +2015,7 @@ REALITY 的设计原理就是通过伪装成一个**高信誉、真实的外部 
     # 外部浏览器访问 80 → 跳转 443
     server {
         listen 80;
-        server_name juan-cool.com www.juan-cool.com;
+        server_name example.com www.example.com;
         return 301 https://$host$request_uri;
     }
     ```
@@ -2046,7 +2046,7 @@ REALITY 的设计原理就是通过伪装成一个**高信誉、真实的外部 
         "realitySettings": {
           "show": false,
           "dest": "127.0.0.1:8443",
-          "serverNames": ["juan-cool.com"],
+          "serverNames": ["example.com"],
           "privateKey": "YOUR-PRIVATE-KEY",
           "shortIds": ["0123456789abcdef"],
           "fingerprint": "chrome"
@@ -2099,8 +2099,8 @@ REALITY 的设计原理就是通过伪装成一个**高信誉、真实的外部 
 2. **权限**：
     
     ```bash
-    sudo chown -R root:root /etc/ssl/juan-cool.com
-    sudo chmod 600 /etc/ssl/juan-cool.com/*.key
+    sudo chown -R root:root /etc/ssl/example.com
+    sudo chmod 600 /etc/ssl/example.com/*.key
     ```
     
 3. **防火墙**：只放通 443/80；本地 8443 不开放。
@@ -2125,12 +2125,12 @@ REALITY 的设计原理就是通过伪装成一个**高信誉、真实的外部 
 
 ## ✅ 最终建议（针对你）
 
-你若已有自己的 juan-cool.com 域名、Nginx 与 acme.sh 环境，则**方案 B 是完全可行的稳定长期方案**。  
+你若已有自己的 example.com 域名、Nginx 与 acme.sh 环境，则**方案 B 是完全可行的稳定长期方案**。  
 配置关键是：
 
 - `realitySettings.dest` 改为 `127.0.0.1:8443`
     
-- `serverNames` 填 `juan-cool.com`
+- `serverNames` 填 `example.com`
     
 - 保持 Nginx 8443 仅 127.0.0.1 可访问
     
@@ -2148,11 +2148,11 @@ REALITY 的设计原理就是通过伪装成一个**高信誉、真实的外部 
     
 - Nginx 已安装
     
-- 域名：`juan-cool.com`
+- 域名：`example.com`
     
-- 网站目录：`/var/www/juan-cool.com`
+- 网站目录：`/var/www/example.com`
     
-- 证书路径：`/etc/ssl/juan-cool.com/`
+- 证书路径：`/etc/ssl/example.com/`
     
 - Xray 与 Nginx 使用本地通信（TCP + Unix 混合）
     
@@ -2203,7 +2203,7 @@ REALITY 的设计原理就是通过伪装成一个**高信誉、真实的外部 
           {
             "id": "REPLACE_WITH_UUID",
             "flow": "xtls-rprx-vision",
-            "email": "user1@juan-cool.com"
+            "email": "user1@example.com"
           }
         ],
         "decryption": "none",
@@ -2220,7 +2220,7 @@ REALITY 的设计原理就是通过伪装成一个**高信誉、真实的外部 
         "realitySettings": {
           "show": false,
           "dest": "127.0.0.1:8443",
-          "serverNames": ["juan-cool.com"],
+          "serverNames": ["example.com"],
           "privateKey": "REPLACE_WITH_PRIVATE_KEY",
           "shortIds": ["REPLACE_WITH_SHORTID"],
           "fingerprint": "chrome"
@@ -2241,22 +2241,22 @@ REALITY 的设计原理就是通过伪装成一个**高信誉、真实的外部 
 
 ---
 
-## 🌐 三、Nginx 配置文件 `/etc/nginx/sites-available/juan-cool.com`
+## 🌐 三、Nginx 配置文件 `/etc/nginx/sites-available/example.com`
 
 ### HTTPS 站点（供 Reality 偷握手）
 
 ```nginx
 server {
     listen 127.0.0.1:8443 ssl http2;
-    server_name juan-cool.com;
+    server_name example.com;
 
-    ssl_certificate     /etc/ssl/juan-cool.com/fullchain.cer;
-    ssl_certificate_key /etc/ssl/juan-cool.com/juan-cool.com.key;
+    ssl_certificate     /etc/ssl/example.com/fullchain.cer;
+    ssl_certificate_key /etc/ssl/example.com/example.com.key;
     ssl_protocols       TLSv1.3;
     ssl_session_cache   shared:SSL:10m;
     ssl_prefer_server_ciphers on;
 
-    root /var/www/juan-cool.com;
+    root /var/www/example.com;
     index index.html;
 
     access_log off;
@@ -2285,9 +2285,9 @@ server {
     set_real_ip_from unix:;
     real_ip_header proxy_protocol;
 
-    server_name juan-cool.com www.juan-cool.com;
+    server_name example.com www.example.com;
 
-    root /var/www/juan-cool.com;
+    root /var/www/example.com;
     index index.html;
 
     access_log /var/log/nginx/juan-cool.access.log;
@@ -2304,7 +2304,7 @@ server {
 
 server {
     listen 80;
-    server_name juan-cool.com www.juan-cool.com;
+    server_name example.com www.example.com;
     return 301 https://$host$request_uri;
 }
 ```
@@ -2315,8 +2315,8 @@ server {
 
 |项目|内容|命令|
 |---|---|---|
-|**证书权限**|防止 Xray 无法读取 key|`sudo chmod 600 /etc/ssl/juan-cool.com/*.key`|
-|**Nginx 用户访问**|允许 `www-data` 访问 `/var/www/juan-cool.com`|`sudo chown -R www-data:www-data /var/www/juan-cool.com`|
+|**证书权限**|防止 Xray 无法读取 key|`sudo chmod 600 /etc/ssl/example.com/*.key`|
+|**Nginx 用户访问**|允许 `www-data` 访问 `/var/www/example.com`|`sudo chown -R www-data:www-data /var/www/example.com`|
 |**Socket 权限**|Xray + Nginx 通信|`/dev/shm` 默认安全且仅 root 可写|
 |**防火墙规则**|仅开放 80/443|`sudo ufw allow 80,443/tcp`|
 
@@ -2341,7 +2341,7 @@ server {
     
 3. 浏览器访问
     
-    - `https://juan-cool.com` → 显示伪装网页
+    - `https://example.com` → 显示伪装网页
         
     - 客户端连接（Reality） → 正常代理通信
         

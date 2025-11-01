@@ -2005,7 +2005,7 @@ REALITY 的设计原理就是通过伪装成一个**高信誉、真实的外部 
         index index.html;
     
         access_log off;
-        error_log /var/log/nginx/juan-cool.local-error.log;
+        error_log /var/log/nginx/example.local-error.log;
     
         location / {
             try_files $uri $uri/ =404;
@@ -2260,7 +2260,7 @@ server {
     index index.html;
 
     access_log off;
-    error_log /var/log/nginx/juan-cool.local-error.log;
+    error_log /var/log/nginx/example.local-error.log;
 
     add_header X-Frame-Options "SAMEORIGIN";
     add_header X-Content-Type-Options "nosniff";
@@ -2290,8 +2290,8 @@ server {
     root /var/www/example.com;
     index index.html;
 
-    access_log /var/log/nginx/juan-cool.access.log;
-    error_log  /var/log/nginx/juan-cool.error.log;
+    access_log /var/log/nginx/example.access.log;
+    error_log  /var/log/nginx/example.error.log;
 
     add_header X-Frame-Options "SAMEORIGIN";
     add_header X-Content-Type-Options "nosniff";

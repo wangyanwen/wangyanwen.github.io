@@ -1,10 +1,10 @@
 +++
 date = '2025-11-05T20:11:46+01:00'
-draft = true
+draft = false
 title = '归档（浏览器自动ai助手）'
 +++
 
-## **弃坑！**
+## **弃坑！**源文件存放于/User/xxx/Documents/cita_monitar/
 
 ---
 

@@ -6,44 +6,46 @@ title = '如何观看BBC动画（最主要是免费成本）'
 
 **实测：Revolut实体卡无法注册Oracle cloud.***（暂时还没找到免费的英国区云资源）*
 
+目前方案是自费租用资源，花小钱办大事，哈哈。
+
 ---
 
 看到微信公号上推荐的BBC动画《Tinpo》，STEM类型，在youtube上搜索看了下，挺好的，但只有10集试播。
 
-小助手回答了，只能在英国地区看官方iplayer，下面是给出的解决方案，免费，哈哈，这是最主要的。
+小助手回答了，只能在英国地区看官方iplayer，~~下面是给出的解决方案，免费，哈哈，这是最主要的。~~
 
 ---
 
-BBC动画《Tinpo》在YouTube上的官方频道确实仅提供了部分剧集，但该系列的完整内容可以通过BBC的官方平台观看。
+BBC动画《Tinpo》在YouTube上的官方频道确实仅提供了部分剧集，但该系列的完整内容可以通过BBC的官方平台观看 **（已下架）**。
 
-### 在BBC官方平台观看《Tinpo》
+### ~~在BBC官方平台观看《Tinpo》~~
 
-BBC iPlayer提供了《Tinpo》第一季的全部78集，适合希望观看完整系列的观众。您可以通过以下链接访问：
+~~BBC iPlayer提供了《Tinpo》第一季的全部78集，适合希望观看完整系列的观众。您可以通过以下链接访问：~~
 
-([player.bbc.com](https://player.bbc.com/en/brand/tinpo?utm_source=chatgpt.com "Tinpo - BBC Player"))
+~~([player.bbc.com](https://player.bbc.com/en/brand/tinpo?utm_source=chatgpt.com "Tinpo - BBC Player"))~~
 
-请注意，BBC iPlayer的内容可能仅对英国地区的用户开放，您可能需要使用VPN服务来访问。
+~~请注意，BBC iPlayer的内容可能仅对英国地区的用户开放，您可能需要使用VPN服务来访问。~~
 
-### YouTube上的其他资源
+### ~~YouTube上的其他资源~~
 
-除了官方频道外，YouTube上还有其他频道上传了《Tinpo》的剧集。例如，Minika频道提供了多集《Tinpo》的视频，您可以通过以下播放列表观看：([YouTube](https://www.youtube.com/playlist?list=PL3SYJsQARR4u9uHMSKZkiQI4xkIzNf_6_&utm_source=chatgpt.com "Tinpo - YouTube"))
+~~除了官方频道外，YouTube上还有其他频道上传了《Tinpo》的剧集。例如，Minika频道提供了多集《Tinpo》的视频，您可以通过以下播放列表观看：([YouTube](https://www.youtube.com/playlist?list=PL3SYJsQARR4u9uHMSKZkiQI4xkIzNf_6_&utm_source=chatgpt.com "Tinpo - YouTube"))~~
 
-([YouTube](https://www.youtube.com/playlist?list=PL3SYJsQARR4u9uHMSKZkiQI4xkIzNf_6_&utm_source=chatgpt.com "Tinpo - YouTube"))
+~~([YouTube](https://www.youtube.com/playlist?list=PL3SYJsQARR4u9uHMSKZkiQI4xkIzNf_6_&utm_source=chatgpt.com "Tinpo - YouTube"))~~
 
-此外，BBC官方频道也上传了一些剧集片段和预告片，例如：
+~~此外，BBC官方频道也上传了一些剧集片段和预告片，例如：~~
 
-- 《Team Tinpo in Frozen Out》
+- ~~《Team Tinpo in Frozen Out》~~
     
-- 《Team Tinpo in Play Ground Found》
+- ~~《Team Tinpo in Play Ground Found》~~
     
-- 《Team Tinpo in Pipe Down》([YouTube](https://www.youtube.com/watch?pp=ygUGI3RpbnBv&v=XciFPvFDweI&utm_source=chatgpt.com "Team Tinpo in Frozen Out | Tinpo Official - YouTube"), [YouTube](https://www.youtube.com/watch?v=YxkeXHJMkXk&utm_source=chatgpt.com "Team Tinpo in Play Ground Found - YouTube"), [YouTube](https://www.youtube.com/watch?pp=ygUJI3RpbXBvZW5n&v=khe73BjgLkM&utm_source=chatgpt.com "Team Tinpo in Pipe Down - YouTube"))
+- ~~《Team Tinpo in Pipe Down》([YouTube](https://www.youtube.com/watch?pp=ygUGI3RpbnBv&v=XciFPvFDweI&utm_source=chatgpt.com "Team Tinpo in Frozen Out | Tinpo Official - YouTube"), [YouTube](https://www.youtube.com/watch?v=YxkeXHJMkXk&utm_source=chatgpt.com "Team Tinpo in Play Ground Found - YouTube"), [YouTube](https://www.youtube.com/watch?pp=ygUJI3RpbXBvZW5n&v=khe73BjgLkM&utm_source=chatgpt.com "Team Tinpo in Pipe Down - YouTube"))~~
     
 
-这些视频可以在YouTube上找到，供您欣赏。
+~~这些视频可以在YouTube上找到，供您欣赏。~~
 
-### 总结
+### ~~总结~~
 
-如果您希望观看《Tinpo》的完整剧集，建议访问BBC iPlayer平台。如果您仅希望观看部分内容或片段，YouTube上的官方频道和其他上传者提供了一些资源。请注意，访问BBC iPlayer可能需要使用VPN服务。([YouTube](https://www.youtube.com/watch?v=wq5pBoioTUA&utm_source=chatgpt.com "Tinpo ALL NEW Trailer! How to Be a Good Leader - YouTube"))
+~~如果您希望观看《Tinpo》的完整剧集，建议访问BBC iPlayer平台。如果您仅希望观看部分内容或片段，YouTube上的官方频道和其他上传者提供了一些资源。请注意，访问BBC iPlayer可能需要使用VPN服务。([YouTube](https://www.youtube.com/watch?v=wq5pBoioTUA&utm_source=chatgpt.com "Tinpo ALL NEW Trailer! How to Be a Good Leader - YouTube"))~~
 
 ---
 
@@ -96,90 +98,90 @@ BBC iPlayer 是 **免费的**，不需要付费会员，但有以下几点需要
 
 ---
 
-这是个不错的思路 ——通过**搭建个人VPN或代理服务**，你可以获得一个**稳定的英国IP**。目前，确实有几个主流云平台可以免费提供**英国节点的虚拟机（VPS）或云函数环境**，适合搭建VPN、代理等服务。
+~~这是个不错的思路 ——通过**搭建个人VPN或代理服务**，你可以获得一个**稳定的英国IP**。目前，确实有几个主流云平台可以免费提供**英国节点的虚拟机（VPS）或云函数环境**，适合搭建VPN、代理等服务。~~
 
-### ✅ 推荐云平台与方案（可用英国节点）
+### ~~✅ 推荐云平台与方案（可用英国节点）~~
 
 #### ~~1. **Oracle Cloud Free Tier**~~
 
-- 免费提供：
+- ~~免费提供：~~
     
-    - 2 台 ARM 或 x86 虚拟机（各有 1GB RAM）
+    - ~~2 台 ARM 或 x86 虚拟机（各有 1GB RAM）~~
         
-    - 每月 10TB 流量
+    - ~~每月 10TB 流量~~
         
-- 可选**英国伦敦数据中心**
+- ~~可选**英国伦敦数据中心**~~
     
-- 适合搭建：**WireGuard / Outline / V2Ray / Shadowsocks**
+- ~~适合搭建：**WireGuard / Outline / V2Ray / Shadowsocks**~~
     
-- 注册需绑定信用卡（不收费）
+- ~~注册需绑定信用卡（不收费）~~
     
-- 官网：[https://www.oracle.com/cloud/free/](https://www.oracle.com/cloud/free/)
+- ~~官网：[https://www.oracle.com/cloud/free/](https://www.oracle.com/cloud/free/)~~
     
 
-✅ **强烈推荐**，是当前性价比最高的免费VPS。
+~~✅ **强烈推荐**，是当前性价比最高的免费VPS。~~
 
----
+~~---~~
 
 #### ~~2. **Google Cloud Platform（GCP）Free Tier**~~
 
-- 免费提供：
+- ~~免费提供：~~
     
-    - f1-micro 实例（仅限美国地区）
+    - ~~f1-micro 实例（仅限美国地区）~~
         
-    - 不含英国节点
+    - ~~不含英国节点~~
         
-- ⚠️ 要想获得英国IP，需开付费账户（可用 300 美元试用金）
+- ~~⚠️ 要想获得英国IP，需开付费账户（可用 300 美元试用金）~~
     
 
-🟡 **不适合搭建英国IP的VPN**，除非愿意使用付费额度。
+~~🟡 **不适合搭建英国IP的VPN**，除非愿意使用付费额度。~~
 
----
+~~---~~
 
-#### 3. **Amazon AWS Free Tier**
+#### ~~3. **Amazon AWS Free Tier**~~
 
-- 免费一年，提供：
+- ~~免费一年，提供：~~
     
-    - 1 台 t2.micro 或 t3.micro EC2（1GB内存）
+    - ~~1 台 t2.micro 或 t3.micro EC2（1GB内存）~~
         
-    - 默认可选英国（伦敦）区域
+    - ~~默认可选英国（伦敦）区域~~
         
-- 注册需绑定信用卡（不收费）
+- ~~注册需绑定信用卡（不收费）~~
     
 
-🟢 适合搭建轻量 VPN，但免费期仅 12 个月。
+~~🟢 适合搭建轻量 VPN，但免费期仅 12 个月。~~
 
----
+~~---~~
 
-#### 4. **Fly.io（适合轻量代理）**
+#### ~~4. **Fly.io（适合轻量代理）**~~
 
-- 免费额度 $5/月，支持运行 Docker 容器
+- ~~免费额度 $5/月，支持运行 Docker 容器~~
     
-- 可部署在**伦敦节点**
+- ~~可部署在**伦敦节点**~~
     
-- 适合部署：**WireGuard / Shadowsocks / 小型反代服务**
+- ~~适合部署：**WireGuard / Shadowsocks / 小型反代服务**~~
     
-- 官网：[https://fly.io](https://fly.io)
-    
-
-🟢 用于轻量反代或透明代理是不错的选择。
-
----
-
-### ✅ 推荐搭建方案
-
-- **WireGuard VPN**：轻量、快速、iPlayer可用（推荐）
-    
-- **Outline VPN**：友好图形界面，适合小白部署
-    
-- **Shadowsocks / V2Ray**：自定义性强，适合翻墙多用途
+- ~~官网：[https://fly.io](https://fly.io)~~
     
 
----
+~~🟢 用于轻量反代或透明代理是不错的选择。~~
 
-以下是使用 **Oracle Cloud 免费英国VPS 搭建 VPN**，从海外访问 **BBC iPlayer** 的完整教程（简明版本）：
+~~---~~
 
-## 🧰 一、准备工作
+### ~~✅ 推荐搭建方案~~
+
+- ~~**WireGuard VPN**：轻量、快速、iPlayer可用（推荐）~~
+    
+- ~~**Outline VPN**：友好图形界面，适合小白部署~~
+    
+- ~~**Shadowsocks / V2Ray**：自定义性强，适合翻墙多用途~~
+    
+
+~~---~~
+
+~~以下是使用 **Oracle Cloud 免费英国VPS 搭建 VPN**，从海外访问 **BBC iPlayer** 的完整教程（简明版本）：~~
+
+## ~~🧰 一、准备工作~~
 
 ### ~~1. 注册 Oracle Cloud 免费账户~~
 
@@ -190,25 +192,25 @@ BBC iPlayer 是 **免费的**，不需要付费会员，但有以下几点需要
 - ~~完成后，进入 Oracle Cloud 控制台~~
     
 
----
+~~---~~
 
-## 🌍 二、创建英国VPS
+## ~~🌍 二、创建英国VPS~~
 
-### 1. 选择区域：**UK South (London)**
+### ~~1. 选择区域：**UK South (London)**~~
 
-创建实例时，请在右上角选择【UK South (London)】
+~~创建实例时，请在右上角选择【UK South (London)】~~
 
-### 2. 创建 Compute 实例：
+### ~~2. 创建 Compute 实例：~~
 
-- 选择形态：**VM.Standard.A1.Flex**（ARM架构，性能强）
+- ~~选择形态：**VM.Standard.A1.Flex**（ARM架构，性能强）~~
     
-- 配置：
+- ~~配置：~~
     
-    - OCPU：1
+    - ~~OCPU：1~~
         
-    - 内存：1GB
+    - ~~内存：1GB~~
         
-    - 镜像：**Ubuntu 22.04 或 Debian 11**
+    - ~~镜像：**Ubuntu 22.04 或 Debian 11**~~
         
 
 ---

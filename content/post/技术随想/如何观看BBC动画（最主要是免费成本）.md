@@ -230,11 +230,7 @@ BBC iPlayer 是 **免费的**，不需要付费会员，但有以下几点需要
 - 如果可以正常播放，即搭建成功 ✅
     
 
-可通过以下命令测试英国IP：
-
-```bash
-curl https://ipinfo.io
-```
+可通过以下网址测试是否英国IP： https://whatismyipaddress.com/
 
 ---
 
